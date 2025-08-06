@@ -1,0 +1,494 @@
+/* Base Styles */
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  padding: 120px 5% 80px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #F8FAFC;
+}
+
+/* Content Styling */
+.content {
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #22D3EE;
+  letter-spacing: 1px;
+  font-family: 'SF Mono', monospace;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+
+.greeting::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #22D3EE;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.name {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  color: #F8FAFC;
+  position: relative;
+}
+
+.nameHighlight {
+  color: #22D3EE;
+  position: relative;
+  display: inline-block;
+}
+
+.nameHighlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(34, 211, 238, 0.3);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #94A3B8;
+  display: inline-block;
+}
+
+.servicesSlider {
+  position: relative;
+  height: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.service {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #22D3EE;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #94A3B8;
+  max-width: 90%;
+  margin: 20px 0 30px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #22D3EE, transparent);
+}
+
+/* Button Styles */
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.primaryButton, .secondaryButton {
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background: transparent;
+  color: #22D3EE;
+  border: 1px solid #22D3EE;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #F8FAFC;
+  border: 1px solid #F8FAFC;
+}
+
+.primaryButton::before, .secondaryButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: 0.5s;
+}
+
+.primaryButton:hover::before, .secondaryButton:hover::before {
+  left: 100%;
+}
+
+.primaryButton:hover {
+  background: rgba(34, 211, 238, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(34, 211, 238, 0.2);
+}
+
+.secondaryButton:hover {
+  background: rgba(248, 250, 252, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(248, 250, 252, 0.1);
+}
+
+.primaryButton svg, .secondaryButton svg {
+  transition: transform 0.3s ease;
+}
+
+.primaryButton:hover svg {
+  transform: rotate(90deg);
+}
+
+.secondaryButton:hover svg {
+  transform: translateY(3px);
+}
+
+/* Tech Stack */
+.techStack {
+  margin-top: 20px;
+}
+
+.techLabel {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  margin-bottom: 10px;
+  font-family: 'SF Mono', monospace;
+  display: inline-block;
+  position: relative;
+}
+
+.techLabel::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #22D3EE, transparent);
+}
+
+.techIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.techRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.techItem {
+  font-size: 0.85rem;
+  background: rgba(34, 211, 238, 0.1);
+  color: #22D3EE;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'SF Mono', monospace;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.techItem:hover {
+  background: rgba(34, 211, 238, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Profile Image Styling */
+.profileWrapper {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  z-index: 2;
+  transition: transform 0.5s ease-out;
+}
+
+.profileBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 211, 238, 0.1);
+  border-radius: 16px;
+  transform: rotate(5deg);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.codeSnippet {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 8px;
+  z-index: 0;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+
+.profileImageContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  filter: grayscale(30%) contrast(1.1);
+}
+
+.profileWrapper:hover .profileImage {
+  filter: grayscale(0%) contrast(1);
+  transform: scale(1.02);
+}
+
+.profileWrapper:hover .profileBackground {
+  transform: rotate(8deg);
+}
+
+.profileWrapper:hover .codeSnippet {
+  transform: translate(-5px, -5px);
+}
+
+.profileHighlight {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(34, 211, 238, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.profileHighlight.hover {
+  transform: scale(1.2);
+  background: rgba(34, 211, 238, 0.2);
+}
+
+/* Social Links */
+.socialLinks {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+
+.socialLink {
+  color: #CBD5E1;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(203, 213, 225, 0.1);
+}
+
+.socialLink:hover {
+  color: #22D3EE;
+  transform: translateY(-5px) scale(1.1);
+  background: rgba(34, 211, 238, 0.1);
+  box-shadow: 0 5px 15px rgba(34, 211, 238, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .heroSection {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 100px 5% 60px;
+    gap: 50px;
+  }
+  
+  .content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .description {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  
+  .description::before {
+    display: none;
+  }
+  
+  .greeting {
+    padding-left: 0;
+  }
+  
+  .greeting::before {
+    display: none;
+  }
+  
+  .profileWrapper {
+    width: 350px;
+    height: 450px;
+  }
+  
+  .buttonGroup {
+    justify-content: center;
+  }
+  
+  .socialLinks {
+    position: relative;
+    bottom: auto;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .techIcons {
+    justify-content: center;
+  }
+  
+  .techRow {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    padding: 80px 5% 40px;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .title, .service {
+    font-size: 1.5rem;
+  }
+  
+  .profileWrapper {
+    width: 280px;
+    height: 360px;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .primaryButton, .secondaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

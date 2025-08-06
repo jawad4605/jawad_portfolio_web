@@ -1,0 +1,392 @@
+/* AboutSection.module.css */
+
+.aboutSection {
+    background-color: #0F172A;
+    padding: 120px 5% 100px;
+    color: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sectionTitle {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #F8FAFC;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sectionNumber {
+    color: #22D3EE;
+    font-family: 'SF Mono', monospace;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.titleLine {
+    height: 1px;
+    background-color: #1E293B;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.aboutText {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #CBD5E1;
+}
+
+.aboutText p {
+    margin-bottom: 20px;
+}
+
+.techList {
+    margin-top: 40px;
+}
+
+.listTitle {
+    color: #F8FAFC;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.listTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #2563EB;
+}
+
+.techColumns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.techColumn {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 150px;
+}
+
+.techColumn li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-family: 'SF Mono', monospace;
+    font-size: 0.9rem;
+    color: #CBD5E1;
+}
+
+.techColumn li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #22D3EE;
+}
+
+.profileWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imageContainer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%) contrast(1.1);
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 211, 238, 0.1);
+    mix-blend-mode: overlay;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.imageBorder {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #22D3EE;
+    border-radius: 8px;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.imageContainer:hover {
+    transform: translateY(-5px);
+}
+
+.imageContainer:hover .profileImage {
+    filter: grayscale(0%) contrast(1);
+}
+
+.imageContainer:hover .imageOverlay {
+    background-color: rgba(34, 211, 238, 0.2);
+}
+
+.imageContainer:hover .imageBorder {
+    top: 10px;
+    left: 10px;
+}
+
+.skillsExperienceWrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.skillsSection, .experienceSection {
+    flex: 1;
+}
+
+.subsectionTitle {
+    font-size: 1.5rem;
+    color: #F8FAFC;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.subsectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #2563EB;
+    border-radius: 2px;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skillItem {
+    margin-bottom: 20px;
+}
+
+.skillInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skillName {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+}
+
+.skillPercent {
+    font-size: 0.8rem;
+    color: #22D3EE;
+    font-family: 'SF Mono', monospace;
+}
+
+.skillBar {
+    height: 6px;
+    background-color: #1E293B;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skillProgress {
+    height: 100%;
+    background: linear-gradient(90deg, #2563EB 0%, #22D3EE 100%);
+    border-radius: 3px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #1E293B;
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timelineMarker {
+    position: absolute;
+    top: 5px;
+    left: -34px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #22D3EE;
+    border: 2px solid #0F172A;
+    z-index: 1;
+}
+
+.timelineContent {
+    background-color: rgba(15, 23, 42, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #1E293B;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timelineItem:hover .timelineContent {
+    border-color: #22D3EE;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.timelineRole {
+    color: #F8FAFC;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+}
+
+.timelineMeta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-family: 'SF Mono', monospace;
+    font-size: 0.8rem;
+}
+
+.timelineCompany {
+    color: #22D3EE;
+}
+
+.timelinePeriod {
+    color: #94A3B8;
+}
+
+.timelineDescription {
+    color: #94A3B8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+    
+    .profileWrapper {
+        order: -1;
+        margin-bottom: 40px;
+    }
+    
+    .imageContainer {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    
+    .skillsExperienceWrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 80px 5% 60px;
+    }
+    
+    .sectionHeader {
+        margin-bottom: 40px;
+    }
+    
+    .contentWrapper {
+        margin-bottom: 50px;
+    }
+    
+    .techColumns {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .titleLine {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .techColumns {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .timelineMeta {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+}

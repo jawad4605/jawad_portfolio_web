@@ -1,0 +1,283 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #0F172A;
+  color: #F8FAFC;
+  padding: 80px 0 0;
+  position: relative;
+  border-top: 1px solid rgba(30, 41, 59, 0.5);
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footerAbout {
+  max-width: 300px;
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logoLink {
+  display: inline-block;
+}
+
+.aboutText {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #94A3B8;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  font-size: 18px;
+  color: #CBD5E1;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #22D3EE;
+  transform: translateY(-3px);
+}
+
+.linksTitle {
+  color: #F8FAFC;
+  font-size: 18px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.linksTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #2563EB;
+  border-radius: 2px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linksList li {
+  margin-bottom: 12px;
+}
+
+.footerLink {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.footerLink:hover {
+  color: #22D3EE;
+  transform: translateX(5px);
+}
+
+.footerLink::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #22D3EE;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.footerLink:hover::before {
+  width: 100%;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contactIcon {
+  font-size: 16px;
+  color: #22D3EE;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.contactLink {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #22D3EE;
+}
+
+.contactBtn {
+  display: inline-block;
+  background: transparent;
+  color: #22D3EE;
+  border: 1px solid #22D3EE;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contactBtn:hover {
+  background: rgba(34, 211, 238, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(34, 211, 238, 0.1);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(30, 41, 59, 0.5);
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #94A3B8;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.legalLink {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.legalLink:hover {
+  color: #22D3EE;
+}
+
+.backToTop {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid #22D3EE;
+  color: #22D3EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backToTop:hover {
+  background: rgba(34, 211, 238, 0.2);
+  transform: translateY(-3px);
+}
+
+.arrowIcon {
+  font-size: 18px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footerTop {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .footerAbout {
+    grid-column: span 2;
+    max-width: 100%;
+  }
+  
+  .footerContact {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 60px 0 0;
+  }
+  
+  .footerTop {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footerAbout,
+  .footerContact {
+    grid-column: span 1;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  
+  .legalLinks {
+    order: 1;
+  }
+  
+  .copyright {
+    order: 2;
+  }
+  
+  .backToTop {
+    order: 3;
+  }
+}

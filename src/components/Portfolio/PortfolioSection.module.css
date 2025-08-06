@@ -1,0 +1,272 @@
+/* Portfolio Section Styles */
+.portfolio {
+  padding: 100px 0;
+  background-color: #0F172A;
+  color: #F8FAFC;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #F8FAFC;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #22D3EE;
+  bottom: -10px;
+  left: 25%;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #94A3B8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Tabs Styles */
+.tabsContainer {
+  margin-bottom: 50px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: #F8FAFC;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #22D3EE;
+  background: rgba(34, 211, 238, 0.1);
+}
+
+.tab.active {
+  color: #22D3EE;
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #22D3EE;
+  transition: width 0.3s ease;
+}
+
+.tab.active .tabIndicator {
+  width: 50%;
+}
+
+/* Portfolio Grid Styles */
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mobileGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.portfolioItem {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.websiteItem {
+  aspect-ratio: 16/9;
+}
+
+.mobileItem {
+  aspect-ratio: 9/19;
+  height: 600px;
+}
+
+.portfolioItem:hover {
+  transform: translateY(-5px);
+}
+
+.portfolioLink {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.portfolioImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Mobile Frame Styles */
+.mobileFrame {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #1E293B;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mobileScreen {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolioItem:hover .portfolioImage {
+  transform: scale(1.05);
+}
+
+.portfolioOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+}
+
+.mobileItem .portfolioOverlay {
+  padding: 15px;
+}
+
+.portfolioOverlay.hovered {
+  opacity: 1;
+}
+
+.portfolioContent {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.portfolioOverlay.hovered .portfolioContent {
+  transform: translateY(0);
+}
+
+.portfolioTitle {
+  color: #F8FAFC;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.mobileItem .portfolioTitle {
+  font-size: 1.1rem;
+}
+
+.portfolioDescription {
+  color: #94A3B8;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.mobileItem .portfolioDescription {
+  font-size: 0.8rem;
+}
+
+.viewProject {
+  color: #22D3EE;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.externalIcon {
+  font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .websiteGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mobileItem {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .portfolioGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .websiteItem {
+    aspect-ratio: 16/9;
+  }
+
+  .mobileItem {
+    aspect-ratio: 9/16;
+    height: auto;
+  }
+}
