@@ -7,17 +7,24 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Usama Hanif - Full Stack Developer | Software & Mobile App Expert</title>
-        <meta name="description" content="Discover Usama Hanif's portfolio - a software developer, mobile app and web full stack developer with server expertise. Explore projects and services offered." />
+        <title>Jawad Ahmad - Contact | Data Scientist & AI Engineer</title>
+        <meta
+          name="description"
+          content="Contact Jawad Ahmad, Data Scientist and AI Engineer specializing in computer vision and machine learning solutions. Available for projects and collaborations."
+        />
+        <meta
+          name="keywords"
+          content="Data Scientist contact, AI Engineer, Computer Vision expert, Machine Learning consultant, Python Developer, Jawad Ahmad contact"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
       <main>
-        <ContactSection/>
-        
+        <ContactSection />
       </main>
+
       <Footer />
     </>
   );
