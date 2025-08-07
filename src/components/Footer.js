@@ -58,16 +58,16 @@ const Footer = () => {
             <h3 className={styles.linksTitle}>Services</h3>
             <ul className={styles.linksList}>
               <li>
-                <Link href="/services/ai-development" className={styles.footerLink}>AI Development</Link>
+                <Link href="/services/data-science-solutions" className={styles.footerLink}>Data Science Solutions</Link>
               </li>
               <li>
-                <Link href="/services/computer-vision" className={styles.footerLink}>Computer Vision</Link>
+                <Link href="/services/machine-learning-development" className={styles.footerLink}>Machine Learning Development</Link>
               </li>
               <li>
-                <Link href="/services/data-analysis" className={styles.footerLink}>Data Analysis</Link>
+                <Link href="/services/computer-vision-systems" className={styles.footerLink}>Computer Vision Systems</Link>
               </li>
               <li>
-                <Link href="/services/ml-models" className={styles.footerLink}>Machine Learning Models</Link>
+                <Link href="/services/data-engineering" className={styles.footerLink}>Data Engineering</Link>
               </li>
               <li>
                 <Link href="/services/ai-integration" className={styles.footerLink}>AI System Integration</Link>
@@ -97,10 +97,10 @@ const Footer = () => {
           <div className={styles.copyright}>
             &copy; {new Date().getFullYear()} Jawad Ahmad. All rights reserved.
           </div>
-          <div className={styles.legalLinks}>
+          {/* <div className={styles.legalLinks}>
             <Link href="/privacy-policy" className={styles.legalLink}>Privacy Policy</Link>
             <Link href="/terms-of-service" className={styles.legalLink}>Terms of Service</Link>
-          </div>
+          </div> */}
           <button onClick={scrollToTop} className={styles.backToTop} aria-label="Back to top">
             <FiArrowUp className={styles.arrowIcon} />
           </button>
