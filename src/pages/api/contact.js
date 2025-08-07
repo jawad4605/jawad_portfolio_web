@@ -17,15 +17,15 @@ export default async function handler(req, res) {
         port: 587, // Or 465 for SSL
         secure: false, // Set to true for 465, false for other ports
         auth: {
-          user: "hanifusama688@gmail.com", // Add your email address here
-          pass: "eeqi rgyi axgd ycis", // Add your email password or app password here
+          user: "jawad.ahmad4605@gmail.com", // Add your email address here
+          pass: "wnfs prnj soxv zwsd", // Add your email password or app password here
         },
       });
 
       // Define email content
       const mailOptions = {
         from: email, // Sender's email
-        to: "hanifusama688@gmail.com", // Receiver's email
+        to: "jawad.ahmad4605@gmail.com", // Receiver's email
         subject: `New Contact Form Submission: ${subject}`,
         html: `
           <h3>Contact Form Submission</h3>
