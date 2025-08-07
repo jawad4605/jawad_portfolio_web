@@ -5,7 +5,7 @@ import { FiExternalLink } from "react-icons/fi";
 import styles from "./PortfolioSection.module.css";
 
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState("website");
+  const [activeTab, setActiveTab] = useState("ai");
   const [hoveredItem, setHoveredItem] = useState(null);
 
   // Portfolio items data
@@ -295,10 +295,11 @@ const Portfolio = () => {
 
   // Tab data
   const tabs = [
+    { id: "ai", label: "AI Solutions" },
     { id: "website", label: "Websites / Softwares" },
     { id: "mobile", label: "Mobile Apps" },
-    { id: "uiux", label: "UI/UX Design" },
-    { id: "ai", label: "AI Solutions" },
+    // { id: "uiux", label: "UI/UX Design" },
+    
   ];
 
   return (
