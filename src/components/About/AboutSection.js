@@ -58,7 +58,7 @@ const AboutSection = () => {
             className={styles.aboutText}
           >
             <p>
-              Hello! I'm Jawad Ahmad, a passionate Data Scientist and Python Developer with expertise in building AI-powered solutions. My journey in technology began with a fascination for data and its potential to transform businesses and solve real-world problems.
+              Hello! I&apos;m Jawad Ahmad, a passionate Data Scientist and Python Developer with expertise in building AI-powered solutions. My journey in technology began with a fascination for data and its potential to transform businesses and solve real-world problems.
             </p>
 
             <p>
@@ -66,7 +66,7 @@ const AboutSection = () => {
             </p>
 
             <p>
-              When I'm not working on AI models, you can find me contributing to open-source projects, researching new techniques in deep learning, or mentoring aspiring data scientists. I believe in continuous learning to stay at the forefront of AI innovation.
+              When I&apos;m not working on AI models, you can find me contributing to open-source projects, researching new techniques in deep learning, or mentoring aspiring data scientists. I believe in continuous learning to stay at the forefront of AI innovation.
             </p>
 
             <div className={styles.techList}>

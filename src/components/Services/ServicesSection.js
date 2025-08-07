@@ -168,7 +168,7 @@ const ServicesSection = () => {
             className={styles.ctaButton}
             onClick={() => openWhatsApp('custom AI project')}
           >
-            Let's Discuss Your Project <FiExternalLink className={styles.externalIcon} />
+            Let&apos;s Discuss Your Project <FiExternalLink className={styles.externalIcon} />
           </button>
         </div>
       </div>

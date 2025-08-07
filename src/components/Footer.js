@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <p className={styles.aboutText}>
               I design and implement cutting-edge AI and computer vision solutions that transform business operations.
-              Let's collaborate on innovative data science projects.
+              Let&apos;s collaborate on innovative data science projects.
             </p>
             <div className={styles.socialLinks}>
               <a href="https://github.com/jawad4605" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
