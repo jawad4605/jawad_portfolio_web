@@ -109,6 +109,61 @@ const Portfolio = () => {
       image: "/images/portfolio/website11.png",
       link: "https://drive.google.com/drive/folders/1GTkdqhRf8jpA5SqwZHyaYxvBgueQDI8X?usp=sharing",
     },
+    {
+  id: 12,
+  title: "Mouse Behavior Authentication System",
+  description:
+    "An AI-powered authentication system that verifies users based on their mouse movement patterns and behaviors.",
+  category: "ai",
+  image: "/images/portfolio/ai3.jpeg",
+  link: "https://github.com/jawad4605/browser_behaviour?tab=readme-ov-file",
+},
+{
+  id: 13,
+  title: "Sentiment Analysis System",
+  description:
+    "A natural language processing (NLP) system that analyzes text data to determine emotions, opinions, and sentiments.",
+  category: "ai",
+  image: "/images/portfolio/ai4.png",
+  link: "https://github.com/jawad4605/sentimential_analysis",
+},
+{
+  id: 14,
+  title: "AI Automation System",
+  description:
+    "An AI-driven automation platform designed to streamline tasks, improve efficiency, and reduce human intervention.",
+  category: "ai",
+  image: "/images/portfolio/ai5.jpg",
+  link: "https://github.com/jawad4605/sentimential_analysis",
+},
+{
+  id: 15,
+  title: "Delivery Boy Tracking System",
+  description:
+    "A real-time tracking and monitoring system for delivery personnel to enhance logistics efficiency and transparency.",
+  category: "ai",
+  image: "/images/portfolio/ai6.jpeg",
+  link: "https://github.com/jawad4605/delivery_efficiency_dashboard/tree/main",
+},
+{
+  id: 16,
+  title: "AI Story Book Generator",
+  description:
+    "An AI tool that generates creative and engaging children's storybooks with unique plots, illustrations, and narration.",
+  category: "ai",
+  image: "/images/portfolio/ai7.jpeg",
+  link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
+},
+{
+  id: 17,
+  title: "VieroMind",
+  description:
+    "An advanced AI-powered mental health assistant designed to provide emotional support and personalized well-being insights.",
+  category: "ai",
+  image: "/images/portfolio/ai8.png",
+  link: "https://drive.google.com/drive/folders/1FYbxe9bKNAljYxH1W7B43noNbwDT4HNk?usp=sharing",
+},
+
   ];
 
   // Filter items based on active tab
