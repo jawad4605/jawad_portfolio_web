@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgFcp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"/>
+      <stop offset="100%" style="stop-color:#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgFcp)"/>
+
+  <!-- Top hero gradient band -->
+  <rect width="1200" height="320" fill="url(#heroGrad)"/>
+
+  <!-- Nav bar -->
+  <rect width="1200" height="62" fill="white"/>
+  <rect width="1200" height="1" y="62" fill="#e5e7eb"/>
+
+  <!-- Logo -->
+  <rect x="40" y="15" width="32" height="32" rx="8" fill="url(#primaryBlue)"/>
+  <!-- Conversion arrows icon -->
+  <path d="M48,27 L60,27 L56,23 M60,35 L48,35 L52,39" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="36" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">File Converter <tspan fill="#2563eb">Pro</tspan></text>
+
+  <!-- Nav links -->
+  <text x="700" y="37" font-family="Arial, sans-serif" font-size="13" fill="#374151">Tools</text>
+  <text x="760" y="37" font-family="Arial, sans-serif" font-size="13" fill="#374151">Pricing</text>
+  <text x="830" y="37" font-family="Arial, sans-serif" font-size="13" fill="#374151">API</text>
+  <text x="900" y="37" font-family="Arial, sans-serif" font-size="13" fill="#374151">Blog</text>
+  <rect x="958" y="17" width="80" height="30" rx="6" fill="url(#primaryBlue)"/>
+  <text x="998" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" text-anchor="middle">Sign In</text>
+  <rect x="1054" y="17" width="108" height="30" rx="6" fill="url(#primaryBlue)"/>
+  <text x="1108" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white" text-anchor="middle">Get Started Free</text>
+
+  <!-- Hero headline -->
+  <text x="600" y="122" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#111827" text-anchor="middle">Free Online File Converter</text>
+  <text x="600" y="168" font-family="Arial, sans-serif" font-size="18" fill="#6b7280" text-anchor="middle">Convert PDF, Word, Images &amp; Markdown — 20+ tools, instant results</text>
+
+  <!-- Upload zone -->
+  <rect x="240" y="200" width="720" height="120" rx="16" fill="white" stroke="#2563eb" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- Upload icon -->
+  <circle cx="600" cy="238" r="24" fill="#dbeafe"/>
+  <path d="M600,226 L600,248 M590,235 L600,224 L610,235" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="600" y="276" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1d4ed8" text-anchor="middle">Drop your file here or click to upload</text>
+  <text x="600" y="296" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">PDF, DOC, DOCX, PNG, JPG, MD and more</text>
+  <rect x="540" y="308" width="120" height="0" fill="transparent"/>
+
+  <!-- Tools grid -->
+  <text x="600" y="358" font-family="Arial, sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle" letter-spacing="2">POPULAR TOOLS</text>
+
+  <!-- Tool cards row 1 -->
+  <!-- PDF to Word -->
+  <rect x="60" y="378" width="168" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="72" y="390" width="30" height="36" rx="4" fill="#fef3c7"/>
+  <text x="87" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#d97706" text-anchor="middle">PDF</text>
+  <text x="115" y="413" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">→</text>
+  <rect x="128" y="390" width="30" height="36" rx="4" fill="#dbeafe"/>
+  <text x="143" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">DOC</text>
+  <text x="145" y="444" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle">PDF to Word</text>
+
+  <!-- Word to PDF -->
+  <rect x="244" y="378" width="168" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="256" y="390" width="30" height="36" rx="4" fill="#dbeafe"/>
+  <text x="271" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="middle">DOC</text>
+  <text x="299" y="413" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">→</text>
+  <rect x="312" y="390" width="30" height="36" rx="4" fill="#fef3c7"/>
+  <text x="327" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#d97706" text-anchor="middle">PDF</text>
+  <text x="329" y="444" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle">Word to PDF</text>
+
+  <!-- Merge PDF -->
+  <rect x="428" y="378" width="168" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="440" y="390" width="24" height="32" rx="3" fill="#fef3c7"/>
+  <rect x="450" y="395" width="24" height="32" rx="3" fill="#fde68a"/>
+  <text x="484" y="413" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">→</text>
+  <rect x="496" y="390" width="30" height="36" rx="4" fill="#d1fae5"/>
+  <text x="511" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#065f46" text-anchor="middle">PDF</text>
+  <text x="513" y="444" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle">Merge PDF</text>
+
+  <!-- Image to PDF -->
+  <rect x="612" y="378" width="168" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="624" y="390" width="30" height="36" rx="4" fill="#f3e8ff"/>
+  <text x="639" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#7c3aed" text-anchor="middle">IMG</text>
+  <text x="667" y="413" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">→</text>
+  <rect x="680" y="390" width="30" height="36" rx="4" fill="#fef3c7"/>
+  <text x="695" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#d97706" text-anchor="middle">PDF</text>
+  <text x="697" y="444" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle">Image to PDF</text>
+
+  <!-- Compress PDF -->
+  <rect x="796" y="378" width="168" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="808" y="390" width="30" height="36" rx="4" fill="#fee2e2"/>
+  <text x="823" y="413" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#dc2626" text-anchor="middle">PDF</text>
+  <text x="851" y="413" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">→</text>
+  <rect x="864" y="396" width="22" height="24" rx="3" fill="#d1fae5"/>
+  <text x="875" y="413" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#065f46" text-anchor="middle">PDF</text>
+  <text x="880" y="444" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle">Compress PDF</text>
+
+  <!-- More tools row -->
+  <rect x="980" y="378" width="168" height="80" rx="12" fill="url(#heroGrad)" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="1064" y="413" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#2563eb" text-anchor="middle">20+</text>
+  <text x="1064" y="444" font-family="Arial, sans-serif" font-size="11" fill="#1d4ed8" text-anchor="middle">More Tools</text>
+
+  <!-- Stats / Social proof -->
+  <rect x="0" y="500" width="1200" height="100" fill="url(#heroGrad)"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#dbeafe" stroke-width="1"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#dbeafe" stroke-width="1"/>
+
+  <text x="240" y="540" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="middle">5M+</text>
+  <text x="240" y="562" font-family="Arial, sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">Files Converted</text>
+  <line x1="480" y1="518" x2="480" y2="582" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="middle">20+</text>
+  <text x="600" y="562" font-family="Arial, sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">Conversion Tools</text>
+  <line x1="720" y1="518" x2="720" y2="582" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="900" y="540" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="middle">100%</text>
+  <text x="900" y="562" font-family="Arial, sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">Free to Use</text>
+
+  <!-- Testimonials strip -->
+  <rect x="60" y="620" width="320" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="80" y="648" font-family="Arial, sans-serif" font-size="12" fill="#fbbf24">★★★★★</text>
+  <text x="80" y="668" font-family="Arial, sans-serif" font-size="12" fill="#374151">"Fastest converter I've used."</text>
+  <text x="80" y="688" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">— Sarah K., Designer</text>
+
+  <rect x="440" y="620" width="320" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="460" y="648" font-family="Arial, sans-serif" font-size="12" fill="#fbbf24">★★★★★</text>
+  <text x="460" y="668" font-family="Arial, sans-serif" font-size="12" fill="#374151">"No sign-up, just works perfectly."</text>
+  <text x="460" y="688" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">— Mark T., Developer</text>
+
+  <rect x="820" y="620" width="320" height="80" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="840" y="648" font-family="Arial, sans-serif" font-size="12" fill="#fbbf24">★★★★★</text>
+  <text x="840" y="668" font-family="Arial, sans-serif" font-size="12" fill="#374151">"20+ tools, all free. Amazing!"</text>
+  <text x="840" y="688" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">— Aisha M., Student</text>
+
+  <text x="600" y="736" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">fileconvpro.manus.space</text>
+</svg>

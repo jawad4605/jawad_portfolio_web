@@ -4,7 +4,7 @@ import {
   FiLayers,
   FiCode,
   FiDatabase,
-  FiPenTool,
+  FiGlobe,
   FiShield,
   FiCloud
 } from 'react-icons/fi';
@@ -12,17 +12,137 @@ import {
 export const servicesData = [
   {
     id: 1,
+    slug: 'ai-web-application-development',
+    title: 'AI Web Application Development',
+    description: 'End-to-end development of live, production-ready AI-powered web applications.',
+    longDescription: 'I design and build full-stack AI web applications that go live and serve real users. From mental health platforms like VieroMind to file conversion tools like FileConv Pro, I handle everything from UI to backend AI integration and cloud deployment.',
+    icon: <FiGlobe />,
+    features: [
+      'Next.js and React Frontend',
+      'Python and FastAPI Backend',
+      'Firebase Integration',
+      'AI Model Embedding',
+      'Cloud Deployment (Vercel, AWS)',
+      'Production-Ready Architecture'
+    ],
+    benefits: [
+      'Fully deployed, live products',
+      'Real users from day one',
+      'AI features built into the core UX',
+      'Scalable and maintainable codebase',
+      'Fast time-to-market'
+    ],
+    process: [
+      { title: 'Discovery', description: 'Define product goals, users, and AI requirements' },
+      { title: 'Design and Architecture', description: 'Plan the stack, UI, and AI integration points' },
+      { title: 'Development', description: 'Build frontend, backend, and AI components in parallel' },
+      { title: 'Testing', description: 'End-to-end testing across all layers' },
+      { title: 'Launch', description: 'Deploy to production and monitor live traffic' }
+    ]
+  },
+  {
+    id: 2,
+    slug: 'machine-learning-development',
+    title: 'Machine Learning Development',
+    description: 'Custom ML models trained, evaluated, and deployed into real products.',
+    longDescription: 'I develop machine learning models tailored to specific problems and integrate them directly into production applications. Every model I build is designed to be deployed, not just demonstrated.',
+    icon: <FiCpu />,
+    features: [
+      'Supervised and Unsupervised Learning',
+      'Deep Learning',
+      'Model Training and Tuning',
+      'Feature Engineering',
+      'Model-to-API Deployment',
+      'Performance Monitoring'
+    ],
+    benefits: [
+      'Models that run in production',
+      'Automated predictions at scale',
+      'Reduced manual effort',
+      'Business intelligence from data',
+      'Scalable ML pipelines'
+    ],
+    process: [
+      { title: 'Problem Definition', description: 'Define ML goals and available data' },
+      { title: 'Data Preparation', description: 'Clean, label, and engineer features' },
+      { title: 'Model Training', description: 'Train, validate, and compare models' },
+      { title: 'Evaluation', description: 'Test for accuracy, fairness, and speed' },
+      { title: 'Deployment', description: 'Wrap in API and ship to production' }
+    ]
+  },
+  {
+    id: 3,
+    slug: 'computer-vision-systems',
+    title: 'Computer Vision Systems',
+    description: 'AI-powered image and video analysis for detection, recognition, and monitoring.',
+    longDescription: 'I build computer vision systems using OpenCV, YOLO, and deep learning that power real applications. From object detection in industrial settings to mouse behavior authentication, my vision systems run in production.',
+    icon: <FiLayers />,
+    features: [
+      'Object Detection with YOLO',
+      'Image Classification',
+      'OCR and Text Recognition',
+      'Video Analytics',
+      'Behavior Analysis',
+      'OpenCV Integration'
+    ],
+    benefits: [
+      'Automated visual workflows',
+      'High-accuracy detection',
+      'Real-time video processing',
+      'Reduced human monitoring costs',
+      'Deployable as API or embedded system'
+    ],
+    process: [
+      { title: 'Requirement Analysis', description: 'Understand visual data and use case' },
+      { title: 'Model Selection', description: 'Choose the right architecture (YOLO, CNN, etc.)' },
+      { title: 'Training', description: 'Train on custom or pre-labeled datasets' },
+      { title: 'Testing', description: 'Validate on real image and video inputs' },
+      { title: 'Deployment', description: 'Integrate with live systems or APIs' }
+    ]
+  },
+  {
+    id: 4,
+    slug: 'ai-integration',
+    title: 'AI System Integration',
+    description: 'Plug AI capabilities into your existing platform without rebuilding from scratch.',
+    longDescription: 'I help businesses add AI to their existing products via APIs, SDKs, and custom middleware. Whether you need a chatbot, document processor, or intelligent recommendation engine, I integrate it cleanly into your stack.',
+    icon: <FiCode />,
+    features: [
+      'REST API Development',
+      'LLM and ChatGPT Integration',
+      'Document AI (PDF, Word processing)',
+      'Real-time Inference',
+      'Webhook and Event Systems',
+      'Performance Monitoring'
+    ],
+    benefits: [
+      'No full rebuild required',
+      'Faster AI feature rollout',
+      'Scalable and modular',
+      'Works with existing tech stack',
+      'Improved user experience'
+    ],
+    process: [
+      { title: 'Audit', description: 'Review current system and integration points' },
+      { title: 'Planning', description: 'Define what AI adds and how it connects' },
+      { title: 'Build', description: 'Develop and connect AI modules' },
+      { title: 'Validate', description: 'Test in staging before production push' },
+      { title: 'Scale', description: 'Monitor and optimize under real load' }
+    ]
+  },
+  {
+    id: 5,
     slug: 'data-science-solutions',
     title: 'Data Science Solutions',
-    description: 'Advanced analytics and predictive modeling to extract insights from your data.',
-    longDescription: 'I provide comprehensive data science services that transform raw data into actionable insights. From exploratory data analysis to predictive modeling, my solutions help you make informed business decisions and uncover hidden trends.',
+    description: 'Advanced analytics and predictive modeling to extract insight from your data.',
+    longDescription: 'I provide data science services that turn raw data into actionable business insight. From exploratory analysis to predictive modeling and dashboards, I help you make decisions backed by evidence.',
     icon: <FiBarChart2 />,
     features: [
       'Predictive Modeling',
       'Statistical Analysis',
-      'Data Visualization',
-      'EDA (Exploratory Data Analysis)',
+      'Exploratory Data Analysis',
       'Feature Engineering',
+      'Power BI and Tableau Dashboards',
       'Model Evaluation'
     ],
     benefits: [
@@ -30,224 +150,104 @@ export const servicesData = [
       'Improved business forecasting',
       'Deeper customer insights',
       'Optimized processes',
-      'Increased ROI from data assets'
+      'Increased ROI from existing data'
     ],
     process: [
-      { title: 'Data Collection', description: 'Gather relevant business and customer data' },
-      { title: 'Exploratory Analysis', description: 'Explore trends, patterns, and anomalies' },
+      { title: 'Data Collection', description: 'Gather relevant business and user data' },
+      { title: 'Exploratory Analysis', description: 'Uncover trends, patterns, and anomalies' },
       { title: 'Model Development', description: 'Build and validate predictive models' },
-      { title: 'Visualization', description: 'Present insights via dashboards and charts' },
-      { title: 'Deployment', description: 'Integrate results into decision-making workflows' }
-    ]
-  },
-  {
-    id: 2,
-    slug: 'machine-learning-development',
-    title: 'Machine Learning Development',
-    description: 'Custom ML models tailored to your specific business requirements.',
-    longDescription: 'From regression models to deep learning networks, I develop machine learning models tailored to solve your specific problems. My focus is on delivering scalable, maintainable, and high-performing ML systems.',
-    icon: <FiCpu />,
-    features: [
-      'Supervised Learning',
-      'Unsupervised Learning',
-      'Deep Learning',
-      'Model Training & Tuning',
-      'Feature Selection',
-      'Performance Optimization'
-    ],
-    benefits: [
-      'Automated insights',
-      'Real-time predictions',
-      'Scalable ML pipelines',
-      'Competitive business intelligence',
-      'Reduced manual effort'
-    ],
-    process: [
-      { title: 'Requirement Gathering', description: 'Define ML goals and data availability' },
-      { title: 'Data Preparation', description: 'Clean and prepare datasets' },
-      { title: 'Model Training', description: 'Develop, train, and validate models' },
-      { title: 'Evaluation', description: 'Test for accuracy, bias, and efficiency' },
-      { title: 'Deployment', description: 'Deploy models into production systems' }
-    ]
-  },
-  {
-    id: 3,
-    slug: 'computer-vision-systems',
-    title: 'Computer Vision Systems',
-    description: 'AI-powered image and video analysis solutions for various applications.',
-    longDescription: 'I develop computer vision systems that can recognize objects, analyze video feeds, and extract useful information from visual content using technologies like OpenCV, YOLO, and deep learning.',
-    icon: <FiLayers />,
-    features: [
-      'Object Detection',
-      'Image Classification',
-      'OCR (Text Recognition)',
-      'Video Analytics',
-      'YOLO Implementation',
-      'OpenCV Solutions'
-    ],
-    benefits: [
-      'Automated visual analysis',
-      'Improved accuracy in recognition',
-      'Real-time video processing',
-      'Enhanced security and monitoring',
-      'Operational efficiency'
-    ],
-    process: [
-      { title: 'Requirement Analysis', description: 'Understand your use case and visual data' },
-      { title: 'Model Design', description: 'Choose architecture and tools (e.g., YOLO, CNN)' },
-      { title: 'Implementation', description: 'Develop and integrate vision algorithms' },
-      { title: 'Testing', description: 'Validate on real image/video datasets' },
-      { title: 'Deployment', description: 'Integrate with existing systems or cloud APIs' }
-    ]
-  },
-  {
-    id: 4,
-    slug: 'ai-integration',
-    title: 'AI Integration',
-    description: 'Seamless integration of AI models into existing business systems.',
-    longDescription: 'I help businesses integrate AI technologies directly into their platforms, enabling smarter decision-making, automation, and intelligent customer interactions without disrupting current workflows.',
-    icon: <FiCode />,
-    features: [
-      'API Development',
-      'Model Deployment',
-      'Cloud Integration',
-      'Real-time Inference',
-      'Scalable Solutions',
-      'Performance Monitoring'
-    ],
-    benefits: [
-      'AI without infrastructure overhaul',
-      'Intelligent features for your app',
-      'Faster go-to-market for AI tools',
-      'Scalability and flexibility',
-      'Improved customer experience'
-    ],
-    process: [
-      { title: 'Integration Planning', description: 'Assess current infrastructure and goals' },
-      { title: 'Model Compatibility', description: 'Choose AI models or APIs for use' },
-      { title: 'Implementation', description: 'Integrate and test AI in your system' },
-      { title: 'Validation', description: 'Monitor outcomes and fine-tune' },
-      { title: 'Scaling', description: 'Deploy AI features at scale' }
-    ]
-  },
-  {
-    id: 5,
-    slug: 'data-engineering',
-    title: 'Data Engineering',
-    description: 'Robust data pipelines and infrastructure for analytics.',
-    longDescription: 'I design and implement scalable data engineering pipelines that ensure efficient, secure, and accurate movement and transformation of data across systems to support business intelligence and machine learning.',
-    icon: <FiDatabase />,
-    features: [
-      'ETL Pipelines',
-      'Data Warehousing',
-      'Big Data Solutions',
-      'Data Cleaning',
-      'Database Optimization',
-      'Data Governance'
-    ],
-    benefits: [
-      'Reliable data pipelines',
-      'Faster analytics workflows',
-      'Optimized storage and access',
-      'Improved data quality',
-      'Enhanced data compliance'
-    ],
-    process: [
-      { title: 'Data Audit', description: 'Understand existing data flows' },
-      { title: 'Pipeline Design', description: 'Create architecture for ETL/ELT' },
-      { title: 'Development', description: 'Build scalable data pipelines' },
-      { title: 'Testing', description: 'Verify data integrity and performance' },
-      { title: 'Monitoring', description: 'Automate health checks and alerts' }
+      { title: 'Visualization', description: 'Present insights via dashboards and reports' },
+      { title: 'Deployment', description: 'Integrate results into decision workflows' }
     ]
   },
   {
     id: 6,
-    slug: 'data-visualization',
-    title: 'Data Visualization',
-    description: 'Interactive dashboards and reports for data-driven decisions.',
-    longDescription: 'I create visually compelling and interactive dashboards using tools like Power BI, Tableau, and Plotly, allowing stakeholders to quickly gain insights and monitor key performance indicators in real time.',
-    icon: <FiPenTool />,
+    slug: 'data-engineering',
+    title: 'Data Engineering',
+    description: 'Scalable data pipelines and infrastructure to power your AI and analytics.',
+    longDescription: 'I design and build data pipelines that move, clean, and transform data reliably at scale. Every AI product I ship depends on solid data engineering underneath.',
+    icon: <FiDatabase />,
     features: [
-      'Power BI Dashboards',
-      'Tableau Reports',
-      'Plotly Visualizations',
-      'Custom Dashboards',
-      'Business Intelligence',
-      'KPI Tracking'
+      'ETL and ELT Pipelines',
+      'Firebase and SQL Databases',
+      'Data Cleaning and Transformation',
+      'Big Data Handling',
+      'Database Optimization',
+      'Automated Health Monitoring'
     ],
     benefits: [
-      'Faster decision making',
-      'User-friendly data insights',
-      'Real-time monitoring',
-      'Custom visual reports',
-      'Enhanced stakeholder communication'
+      'Reliable data flows',
+      'Faster analytics and AI inference',
+      'Optimized storage costs',
+      'Improved data quality',
+      'Less time fixing data, more time using it'
     ],
     process: [
-      { title: 'Requirement Gathering', description: 'Understand KPIs and business goals' },
-      { title: 'Tool Selection', description: 'Select the right dashboard tool' },
-      { title: 'Data Connection', description: 'Connect to databases and APIs' },
-      { title: 'Design & Build', description: 'Develop the visual dashboard' },
-      { title: 'Feedback & Iteration', description: 'Refine based on user input' }
+      { title: 'Data Audit', description: 'Map existing data sources and flows' },
+      { title: 'Pipeline Design', description: 'Architect ETL or streaming pipelines' },
+      { title: 'Development', description: 'Build and test each pipeline stage' },
+      { title: 'Validation', description: 'Verify data integrity end to end' },
+      { title: 'Monitoring', description: 'Automate alerts for failures or drift' }
     ]
   },
   {
     id: 7,
     slug: 'ai-consulting',
-    title: 'AI Consulting',
-    description: 'Strategic guidance for implementing AI in your organization.',
-    longDescription: 'I offer expert guidance to help you understand where and how AI can bring value to your business. From identifying opportunities to evaluating tools and vendors, I provide a strategic roadmap for successful AI adoption.',
+    title: 'AI Product Consulting',
+    description: 'Strategic guidance to turn your AI idea into a shipped, scalable product.',
+    longDescription: 'I help founders and teams figure out what to build, how to build it, and how to get it to market. Having shipped multiple live AI products, I provide practical advice grounded in real execution.',
     icon: <FiShield />,
     features: [
-      'AI Strategy Development',
-      'Use Case Identification',
-      'Technology Selection',
-      'ROI Analysis',
-      'Implementation Roadmap',
-      'Team Training'
+      'Product-Market Fit for AI',
+      'Tech Stack Selection',
+      'MVP Scoping',
+      'AI Use Case Identification',
+      'Build vs. Buy Analysis',
+      'Roadmap and Launch Planning'
     ],
     benefits: [
-      'Reduced AI adoption risks',
-      'Faster implementation',
-      'Better resource planning',
-      'Strategic alignment',
-      'Competitive edge in AI usage'
+      'Avoid costly wrong decisions early',
+      'Ship faster with the right stack',
+      'Proven patterns from live products',
+      'Honest assessment of what is possible',
+      'Focus on what users actually need'
     ],
     process: [
-      { title: 'Assessment', description: 'Evaluate readiness and needs' },
-      { title: 'Strategy Planning', description: 'Develop AI roadmap and use cases' },
-      { title: 'Vendor/Tool Selection', description: 'Choose platforms and frameworks' },
-      { title: 'Pilot Program', description: 'Implement small-scale POCs' },
-      { title: 'Rollout & Training', description: 'Train teams and launch full-scale project' }
+      { title: 'Discovery Call', description: 'Understand your idea, goals, and constraints' },
+      { title: 'Assessment', description: 'Evaluate technical feasibility and risk' },
+      { title: 'Strategy', description: 'Define the roadmap and MVP scope' },
+      { title: 'Prototype Review', description: 'Validate early decisions before committing' },
+      { title: 'Ongoing Support', description: 'Advisory support through build and launch' }
     ]
   },
   {
     id: 8,
     slug: 'cloud-ai-solutions',
-    title: 'Cloud AI Solutions',
-    description: 'Deploy scalable AI solutions on cloud platforms.',
-    longDescription: 'I help you deploy and manage AI solutions using cloud services like AWS, GCP, and Azure. From AutoML to scalable inference, I ensure your AI workloads are cost-effective, secure, and highly available.',
+    title: 'Cloud AI Deployment',
+    description: 'Deploy and scale AI applications on AWS, Vercel, and Firebase.',
+    longDescription: 'I handle the full deployment of AI applications to cloud infrastructure. From serverless APIs to containerized ML models, I ensure your product is fast, reliable, and cost-efficient at scale.',
     icon: <FiCloud />,
     features: [
-      'AWS AI Services',
-      'Azure Machine Learning',
-      'GCP AI Platform',
-      'Model Hosting',
-      'AutoML Solutions',
-      'Serverless AI'
+      'Vercel and AWS Deployment',
+      'Firebase Backend Services',
+      'Containerized ML with Docker',
+      'Serverless AI APIs',
+      'CDN and Performance Optimization',
+      'Uptime Monitoring'
     ],
     benefits: [
-      'On-demand scalability',
-      'Cost-effective infrastructure',
-      'Seamless model deployment',
+      'Live in production, not just local',
+      'Scales with user growth',
+      'Cost-efficient infrastructure',
       'High availability and uptime',
-      'Flexible integrations'
+      'Easy CI/CD integration'
     ],
     process: [
-      { title: 'Cloud Assessment', description: 'Identify suitable cloud services' },
-      { title: 'Infrastructure Setup', description: 'Create scalable cloud environments' },
-      { title: 'Model Deployment', description: 'Deploy models using AutoML or containers' },
-      { title: 'Monitoring', description: 'Track usage and performance' },
-      { title: 'Optimization', description: 'Refine for cost and performance' }
+      { title: 'Infrastructure Planning', description: 'Choose cloud services and architecture' },
+      { title: 'Environment Setup', description: 'Configure staging and production environments' },
+      { title: 'Deployment', description: 'Ship models and APIs to cloud' },
+      { title: 'Monitoring', description: 'Track uptime, latency, and errors' },
+      { title: 'Optimization', description: 'Tune for cost, speed, and reliability' }
     ]
   }
 ];

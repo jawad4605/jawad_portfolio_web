@@ -10,6 +10,116 @@ const Portfolio = () => {
 
   // Portfolio items data
   const portfolioItems = [
+    // ── LIVE AI PROJECTS (pinned to top) ──
+    {
+      id: 17,
+      title: "VieroMind",
+      description:
+        "Licensed therapists and private AI tools in one place. Your path to mental wellness, designed for regional realities.",
+      category: "ai",
+      image: "/images/portfolio/vieromind-live.svg",
+      link: "https://vieromind.com",
+    },
+    {
+      id: 18,
+      title: "Jalish Fine Jewelry",
+      description:
+        "Luxury fine jewelry e-commerce platform showcasing handcrafted bespoke pieces. Timeless elegance, refined.",
+      category: "ai",
+      image: "/images/portfolio/jalish-live.svg",
+      link: "https://jalish.manus.space",
+    },
+    {
+      id: 19,
+      title: "RoundTable VierOMind",
+      description:
+        "Invitation-only strategic convening portal defining a scalable mental health system for Pakistan's 240 million citizens.",
+      category: "ai",
+      image: "/images/portfolio/roundtable-live.svg",
+      link: "https://roundtablevieromind.manus.space",
+    },
+    {
+      id: 20,
+      title: "Viero Academy: Clinical Document Engine",
+      description:
+        "AI-powered clinical document engine that extracts structure from PDF/Word files and generates professional print-ready PDFs.",
+      category: "ai",
+      image: "/images/portfolio/vieroacademy.svg",
+      link: "https://vieroacademy.manus.space",
+    },
+    {
+      id: 21,
+      title: "FileConv Pro",
+      description:
+        "Free online file conversion platform with 20+ tools for PDF, Word, images, and Markdown. Fast, free, no sign-up required.",
+      category: "ai",
+      image: "/images/portfolio/fileconvpro.svg",
+      link: "https://fileconvpro.manus.space",
+    },
+    // ── OTHER AI PROJECTS ──
+    {
+      id: 3,
+      title: "RAG GPT Implementation",
+      description:
+        "Custom Retrieval-Augmented Generation system for enhanced AI question answering capabilities.",
+      category: "ai",
+      image: "/images/portfolio/website4.png",
+      link: "https://drive.google.com/drive/folders/1fuE7Ip5eKscjx7KLOxQSVn2syGI99aoS?usp=sharing",
+    },
+    {
+      id: 9,
+      title: "Oriole AI Suite",
+      description: "A suite of AI tools for different types of AI Solutions.",
+      category: "ai",
+      image: "/images/portfolio/ai2.png",
+      link: "https://drive.google.com/drive/folders/14dmt4xgYLAa8PY6sw8Nl8vVcWMm6AR3T?usp=sharing",
+    },
+    {
+      id: 12,
+      title: "Mouse Behavior Authentication System",
+      description:
+        "An AI-powered authentication system that verifies users based on their mouse movement patterns and behaviors.",
+      category: "ai",
+      image: "/images/portfolio/ai3.jpeg",
+      link: "https://github.com/jawad4605/browser_behaviour?tab=readme-ov-file",
+    },
+    {
+      id: 13,
+      title: "Sentiment Analysis System",
+      description:
+        "A natural language processing (NLP) system that analyzes text data to determine emotions, opinions, and sentiments.",
+      category: "ai",
+      image: "/images/portfolio/ai4.png",
+      link: "https://github.com/jawad4605/sentimential_analysis",
+    },
+    {
+      id: 14,
+      title: "AI Automation System",
+      description:
+        "An AI-driven automation platform designed to streamline tasks, improve efficiency, and reduce human intervention.",
+      category: "ai",
+      image: "/images/portfolio/ai5.jpg",
+      link: "https://github.com/jawad4605/sentimential_analysis",
+    },
+    {
+      id: 15,
+      title: "Delivery Boy Tracking System",
+      description:
+        "A real-time tracking and monitoring system for delivery personnel to enhance logistics efficiency and transparency.",
+      category: "ai",
+      image: "/images/portfolio/ai6.jpeg",
+      link: "https://github.com/jawad4605/delivery_efficiency_dashboard/tree/main",
+    },
+    {
+      id: 16,
+      title: "AI Story Book Generator",
+      description:
+        "An AI tool that generates creative and engaging children's storybooks with unique plots, illustrations, and narration.",
+      category: "ai",
+      image: "/images/portfolio/ai7.jpeg",
+      link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
+    },
+    // ── WEBSITES / SOFTWARES ──
     {
       id: 1,
       title: "Educational Platform",
@@ -29,14 +139,33 @@ const Portfolio = () => {
       link: "https://drive.google.com/drive/folders/1UmYP7bAF-eWHDuh4yzyeb6EkzvQ-qYvU?usp=sharing",
     },
     {
-      id: 3,
-      title: "RAG GPT Implementation",
+      id: 8,
+      title: "Medical Lab Dashboard",
       description:
-        "Custom Retrieval-Augmented Generation system for enhanced AI question answering capabilities.",
-      category: "ai",
-      image: "/images/portfolio/website4.png",
-      link: "https://drive.google.com/drive/folders/1fuE7Ip5eKscjx7KLOxQSVn2syGI99aoS?usp=sharing",
+        "Comprehensive medical dashboard for patient report management and health analytics.",
+      category: "website",
+      image: "/images/portfolio/website6.png",
+      link: "https://drive.google.com/drive/folders/1qoP2MpSos2iMC1lHTtrcc_qnGIvNDGcl?usp=sharing",
     },
+    {
+      id: 10,
+      title: "Software Agency Website",
+      description:
+        "A software development agency website for showcase their portfolio and services.",
+      category: "website",
+      image: "/images/portfolio/website10.png",
+      link: "https://drive.google.com/drive/folders/1L-hNyxhSeWq-kFlie6USVEiU8S0ZXLkk?usp=sharing",
+    },
+    {
+      id: 11,
+      title: "Stock Managment System",
+      description:
+        "A stock management system for tracking and managing stocks and inventory.",
+      category: "website",
+      image: "/images/portfolio/website11.png",
+      link: "https://drive.google.com/drive/folders/1GTkdqhRf8jpA5SqwZHyaYxvBgueQDI8X?usp=sharing",
+    },
+    // ── MOBILE APPS ──
     {
       id: 4,
       title: "Medical AI Assistant",
@@ -73,97 +202,6 @@ const Portfolio = () => {
       image: "/images/portfolio/mobileapp4.jpeg",
       link: "https://drive.google.com/drive/folders/1FnOEAqXktpNMbopkdy9X49WbZGGlMEtm?usp=sharing",
     },
-    {
-      id: 8,
-      title: "Medical Lab Dashboard",
-      description:
-        "Comprehensive medical dashboard for patient report management and health analytics.",
-      category: "website",
-      image: "/images/portfolio/website6.png",
-      link: "https://drive.google.com/drive/folders/1qoP2MpSos2iMC1lHTtrcc_qnGIvNDGcl?usp=sharing",
-    },
-
-    {
-      id: 9,
-      title: "Oriole AI Suite",
-      description: "A suite of AI tools for different types of AI Solutions.",
-      category: "ai",
-      image: "/images/portfolio/ai2.png",
-      link: "https://drive.google.com/drive/folders/14dmt4xgYLAa8PY6sw8Nl8vVcWMm6AR3T?usp=sharing",
-    },
-    {
-      id: 10,
-      title: "Software Agency Website",
-      description:
-        "A software development agency website for showcase their portfolio and services.",
-      category: "website",
-      image: "/images/portfolio/website10.png",
-      link: "https://drive.google.com/drive/folders/1L-hNyxhSeWq-kFlie6USVEiU8S0ZXLkk?usp=sharing",
-    },
-    {
-      id: 11,
-      title: "Stock Managment System",
-      description:
-        "A stock management system for tracking and managing stocks and inventory.",
-      category: "website",
-      image: "/images/portfolio/website11.png",
-      link: "https://drive.google.com/drive/folders/1GTkdqhRf8jpA5SqwZHyaYxvBgueQDI8X?usp=sharing",
-    },
-    {
-  id: 12,
-  title: "Mouse Behavior Authentication System",
-  description:
-    "An AI-powered authentication system that verifies users based on their mouse movement patterns and behaviors.",
-  category: "ai",
-  image: "/images/portfolio/ai3.jpeg",
-  link: "https://github.com/jawad4605/browser_behaviour?tab=readme-ov-file",
-},
-{
-  id: 13,
-  title: "Sentiment Analysis System",
-  description:
-    "A natural language processing (NLP) system that analyzes text data to determine emotions, opinions, and sentiments.",
-  category: "ai",
-  image: "/images/portfolio/ai4.png",
-  link: "https://github.com/jawad4605/sentimential_analysis",
-},
-{
-  id: 14,
-  title: "AI Automation System",
-  description:
-    "An AI-driven automation platform designed to streamline tasks, improve efficiency, and reduce human intervention.",
-  category: "ai",
-  image: "/images/portfolio/ai5.jpg",
-  link: "https://github.com/jawad4605/sentimential_analysis",
-},
-{
-  id: 15,
-  title: "Delivery Boy Tracking System",
-  description:
-    "A real-time tracking and monitoring system for delivery personnel to enhance logistics efficiency and transparency.",
-  category: "ai",
-  image: "/images/portfolio/ai6.jpeg",
-  link: "https://github.com/jawad4605/delivery_efficiency_dashboard/tree/main",
-},
-{
-  id: 16,
-  title: "AI Story Book Generator",
-  description:
-    "An AI tool that generates creative and engaging children's storybooks with unique plots, illustrations, and narration.",
-  category: "ai",
-  image: "/images/portfolio/ai7.jpeg",
-  link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
-},
-{
-  id: 17,
-  title: "VieroMind",
-  description:
-    "An advanced AI-powered mental health assistant designed to provide emotional support and personalized well-being insights.",
-  category: "ai",
-  image: "/images/portfolio/ai8.png",
-  link: "https://drive.google.com/drive/folders/1FYbxe9bKNAljYxH1W7B43noNbwDT4HNk?usp=sharing",
-},
-
   ];
 
   // Filter items based on active tab

@@ -4,20 +4,26 @@ import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
   const skills = [
-    { name: "Python Development", level: 95 },
-    { name: "Machine Learning", level: 90 },
+    { name: "AI Product Development", level: 95 },
+    { name: "Python and Machine Learning", level: 92 },
+    { name: "Full-Stack Web (Next.js, React)", level: 88 },
     { name: "Computer Vision", level: 90 },
-    { name: "Data Analysis", level: 85 },
-    { name: "Deep Learning", level: 85 },
-    { name: "AI Model Deployment", level: 80 },
+    { name: "Firebase and Cloud Deployment", level: 85 },
+    { name: "Data Analysis and Visualization", level: 83 },
   ];
 
   const experience = [
     {
+      role: "AI Product Builder",
+      company: "VierOMind",
+      period: "Oct 2025 - Present",
+      description: "Building and launching AI-powered web products across mental health, e-commerce, document processing, and file conversion. Responsible for full-stack development, AI integration, and cloud deployment.",
+    },
+    {
       role: "IT Executive (AI)",
       company: "Evyol Group",
-      period: "Dec 2024 - Present",
-      description: "Implementing AI-driven automation solutions in production and office workflows, developing computer vision systems for operational safety.",
+      period: "Dec 2024 - Oct 2025",
+      description: "Implemented AI-driven automation solutions in production and office workflows, and developed computer vision systems for operational safety.",
     },
     {
       role: "IT Support",
@@ -27,7 +33,7 @@ const AboutSection = () => {
     },
     {
       role: "Freelance Data Scientist",
-      company: "Upwork & Fiverr",
+      company: "Upwork and Fiverr",
       period: "Jan 2022 - Present",
       description: "Delivered end-to-end data solutions including AI models, data analysis, and visualization for international clients.",
     },
@@ -58,15 +64,15 @@ const AboutSection = () => {
             className={styles.aboutText}
           >
             <p>
-              Hello! I&apos;m Jawad Ahmad, a passionate Data Scientist and Python Developer with expertise in building AI-powered solutions. My journey in technology began with a fascination for data and its potential to transform businesses and solve real-world problems.
+              Hello! I&apos;m Jawad Ahmad, an AI product builder and full-stack developer who ships real, production-grade applications. I do not just build models in notebooks. I take ideas from concept to deployed products that serve real users.
             </p>
 
             <p>
-              I specialize in developing computer vision systems, machine learning models, and data analytics pipelines. My work focuses on creating practical AI applications that deliver measurable impact, from automated detection systems to predictive analytics.
+              My work spans the full product lifecycle: designing intelligent systems, integrating machine learning into web applications, and shipping them to production. I have built and launched multiple live platforms across mental health, e-commerce, document processing, and file conversion verticals.
             </p>
 
             <p>
-              When I&apos;m not working on AI models, you can find me contributing to open-source projects, researching new techniques in deep learning, or mentoring aspiring data scientists. I believe in continuous learning to stay at the forefront of AI innovation.
+              I work across the full stack: Python and machine learning on the backend, Next.js and React on the frontend, Firebase for real-time data, and cloud platforms for scalable deployment. I care about building things that work in production, not just in development.
             </p>
 
             <div className={styles.techList}>
@@ -74,33 +80,33 @@ const AboutSection = () => {
               <div className={styles.techColumns}>
                 <ul className={styles.techColumn}>
                   <li>Python</li>
-                  <li>TensorFlow</li>
-                  <li>PyTorch</li>
+                  <li>Next.js</li>
+                  <li>React</li>
                 </ul>
                 <ul className={styles.techColumn}>
-                  <li>OpenCV</li>
-                  <li>YOLO</li>
-                  <li>scikit-learn</li>
-                </ul>
-                <ul className={styles.techColumn}>
-                  <li>Pandas</li>
-                  <li>NumPy</li>
+                  <li>Firebase</li>
+                  <li>Node.js</li>
                   <li>FastAPI</li>
                 </ul>
                 <ul className={styles.techColumn}>
-                  <li>Flask</li>
-                  <li>Power BI</li>
-                  <li>Tableau</li>
+                  <li>TensorFlow</li>
+                  <li>PyTorch</li>
+                  <li>OpenCV</li>
+                </ul>
+                <ul className={styles.techColumn}>
+                  <li>YOLO</li>
+                  <li>scikit-learn</li>
+                  <li>Pandas</li>
                 </ul>
                 <ul className={styles.techColumn}>
                   <li>AWS</li>
+                  <li>Vercel</li>
                   <li>Docker</li>
-                  <li>Git</li>
                 </ul>
                 <ul className={styles.techColumn}>
                   <li>SQL</li>
                   <li>MongoDB</li>
-                  <li>Streamlit</li>
+                  <li>Git</li>
                 </ul>
               </div>
             </div>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="85%" style="stop-color:#f0f4ff"/>
+      <stop offset="100%" style="stop-color:#e8edf8"/>
+    </linearGradient>
+    <linearGradient id="blueBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a56db"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="greenBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#057a55"/>
+      <stop offset="100%" style="stop-color:#046c4e"/>
+    </linearGradient>
+    <linearGradient id="logoCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8edf8"/>
+      <stop offset="100%" style="stop-color:#dce3f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgWhite)"/>
+
+  <!-- Nav bar -->
+  <rect width="1200" height="70" fill="white"/>
+  <rect width="1200" height="1" y="70" fill="#e5e7eb"/>
+
+  <!-- Logo: circle icon + VieroMind wordmark -->
+  <circle cx="52" cy="35" r="18" fill="none" stroke="url(#logoCircle)" stroke-width="3"/>
+  <circle cx="52" cy="35" r="8" fill="url(#logoCircle)" opacity="0.3"/>
+  <circle cx="52" cy="35" r="4" fill="url(#logoCircle)"/>
+  <text x="78" y="41" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" letter-spacing="-0.5">VieroMind</text>
+
+  <!-- Nav links -->
+  <text x="310" y="41" font-family="Arial, sans-serif" font-size="13" fill="#111827" font-weight="600">Home</text>
+  <rect x="300" y="65" width="44" height="3" rx="1.5" fill="#1a56db"/>
+  <text x="390" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Resources</text>
+  <text x="490" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Community</text>
+  <text x="598" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Compass</text>
+  <text x="686" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Articles</text>
+  <text x="758" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Impact</text>
+  <text x="820" y="41" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">About</text>
+
+  <!-- For Therapists button (green) -->
+  <rect x="880" y="18" width="148" height="36" rx="18" fill="url(#greenBtn)"/>
+  <text x="954" y="41" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">⚕ For Therapists</text>
+
+  <!-- Get Started button (blue) -->
+  <rect x="1044" y="18" width="126" height="36" rx="18" fill="url(#blueBtn)"/>
+  <text x="1107" y="41" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">Get Started</text>
+
+  <!-- Hero text -->
+  <text x="600" y="166" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#111827" text-anchor="middle">Your Path To</text>
+  <!-- "Mental Wellness" in blue -->
+  <text x="600" y="238" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#1a56db" text-anchor="middle">Mental Wellness</text>
+  <text x="600" y="310" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#111827" text-anchor="middle">Starts Here</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="17" fill="#6b7280" text-anchor="middle">Licensed therapists and private tools in one place.</text>
+  <text x="600" y="385" font-family="Arial, sans-serif" font-size="17" fill="#6b7280" text-anchor="middle">We work at your pace.</text>
+  <text x="600" y="418" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af" text-anchor="middle">Designed for the realities of our region</text>
+
+  <!-- CTA buttons -->
+  <rect x="418" y="446" width="178" height="50" rx="25" fill="url(#blueBtn)"/>
+  <text x="507" y="476" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white" text-anchor="middle">Start Compass</text>
+
+  <rect x="612" y="446" width="178" height="50" rx="25" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="701" y="476" font-family="Arial, sans-serif" font-size="15" fill="#374151" text-anchor="middle">💬 Talk to Viero</text>
+
+  <text x="820" y="474" font-family="Arial, sans-serif" font-size="15" fill="#374151" text-anchor="middle">Explore support</text>
+
+  <!-- Stats row -->
+  <text x="430" y="556" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#111827" text-anchor="middle">1,200+</text>
+  <text x="430" y="578" font-family="Arial, sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">Active Users</text>
+
+  <text x="600" y="556" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#111827" text-anchor="middle">50+</text>
+  <text x="600" y="578" font-family="Arial, sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">Licensed Therapists</text>
+
+  <text x="780" y="556" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#111827" text-anchor="middle">100%</text>
+  <text x="780" y="578" font-family="Arial, sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">Confidential</text>
+
+  <!-- Wave shape at bottom -->
+  <path d="M0,620 Q300,590 600,615 Q900,640 1200,610 L1200,750 L0,750 Z" fill="url(#waveGrad)"/>
+
+  <!-- Footer compliance text -->
+  <text x="600" y="700" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">Regional Data Alignment · UK PDPL · PK Data Law · GDPR Principles</text>
+
+  <!-- Chat bubble bottom right -->
+  <rect x="1060" y="680" width="120" height="40" rx="20" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="1120" y="705" font-family="Arial, sans-serif" font-size="12" fill="#374151" text-anchor="middle">💬 Talk to Viero</text>
+</svg>

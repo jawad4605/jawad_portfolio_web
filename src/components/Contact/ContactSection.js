@@ -172,13 +172,12 @@ const ContactSection = () => {
             className={styles.contactIntro}
           >
             <h3 className={styles.contactHeading}>
-              Let&apos;s Collaborate on AI Solutions
+              Let&apos;s Build Something Real
             </h3>
             <p className={styles.contactText}>
-              I&apos;m currently open to new opportunities in data science and AI development.
-              Whether you have a project in mind, need consultation, or just want to
-              discuss the latest in machine learning, feel free to reach out through
-              any of the contact methods or by filling out the form.
+              Have a product idea that needs AI? Want to discuss a collaboration or a technical
+              challenge? Fill in the form or reach out directly through any of the contact
+              methods below. I will get back to you promptly.
             </p>
 
             <div className={styles.contactMethods}>

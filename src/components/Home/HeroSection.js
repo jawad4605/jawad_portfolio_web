@@ -5,12 +5,12 @@ import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
   const services = [
+    "AI Product Builder",
+    "Full-Stack AI Developer",
     "Data Scientist",
     "Python Developer",
-    "Data Analyst",
-    "Computer Vision Engineer",
-    "AI Solutions Developer",
-    "Machine Learning Specialist",
+    "Machine Learning Engineer",
+    "AI Solutions Architect",
   ];
 
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -71,7 +71,7 @@ const HeroSection = () => {
           </div>
 
           <p className={styles.description}>
-            I design and deploy AI-powered solutions that transform businesses through computer vision, machine learning, and data analytics. Specializing in Python, TensorFlow, and PyTorch, I build intelligent systems—from real-time object detection (YOLO, OpenCV) to predictive models and automated workflows. My expertise spans full-cycle AI development, integrating scalable solutions with APIs for seamless deployment. Passionate about turning data into actionable insights, I create impactful applications in precision agriculture, automation, and beyond
+            I design, build, and deploy AI-powered web applications that serve real users in production. My work spans mental health platforms, e-commerce, document processing, and utility tools. My stack covers Python, Next.js, React, Firebase, and machine learning frameworks, with full ownership from model training to cloud deployment.
           </p>
 
           <div className={styles.buttonGroup}>
@@ -99,28 +99,28 @@ const HeroSection = () => {
             <div className={styles.techIcons}>
               <div className={styles.techRow}>
                 <span className={styles.techItem}>Python</span>
+                <span className={styles.techItem}>Next.js</span>
+                <span className={styles.techItem}>React</span>
+                <span className={styles.techItem}>Firebase</span>
+              </div>
+              <div className={styles.techRow}>
                 <span className={styles.techItem}>TensorFlow</span>
                 <span className={styles.techItem}>PyTorch</span>
                 <span className={styles.techItem}>OpenCV</span>
-              </div>
-              <div className={styles.techRow}>
                 <span className={styles.techItem}>YOLO</span>
-                <span className={styles.techItem}>Pandas</span>
-                <span className={styles.techItem}>NumPy</span>
-                <span className={styles.techItem}>scikit-learn</span>
               </div>
               <div className={styles.techRow}>
                 <span className={styles.techItem}>FastAPI</span>
-                <span className={styles.techItem}>Flask</span>
-                <span className={styles.techItem}>Power BI</span>
-                <span className={styles.techItem}>Tableau</span>
+                <span className={styles.techItem}>Node.js</span>
+                <span className={styles.techItem}>Pandas</span>
+                <span className={styles.techItem}>scikit-learn</span>
                 <span className={styles.techItem}>AWS</span>
               </div>
               <div className={styles.techRow}>
                 <span className={styles.techItem}>SQL</span>
                 <span className={styles.techItem}>Docker</span>
                 <span className={styles.techItem}>Git</span>
-                <span className={styles.techItem}>Linux</span>
+                <span className={styles.techItem}>Vercel</span>
                 <span className={styles.techItem}>Streamlit</span>
               </div>
             </div>

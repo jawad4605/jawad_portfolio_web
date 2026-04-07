@@ -23,8 +23,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className={styles.aboutText}>
-              I design and implement cutting-edge AI and computer vision solutions that transform business operations.
-              Let&apos;s collaborate on innovative data science projects.
+              AI product builder and full-stack developer. I design, build, and deploy intelligent web applications that serve real users at scale.
             </p>
             <div className={styles.socialLinks}>
               <a href="https://github.com/jawad4605" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -58,19 +57,19 @@ const Footer = () => {
             <h3 className={styles.linksTitle}>Services</h3>
             <ul className={styles.linksList}>
               <li>
-                <Link href="/services/data-science-solutions" className={styles.footerLink}>Data Science Solutions</Link>
+                <Link href="/services/ai-web-application-development" className={styles.footerLink}>AI Web App Development</Link>
               </li>
               <li>
-                <Link href="/services/machine-learning-development" className={styles.footerLink}>Machine Learning Development</Link>
+                <Link href="/services/machine-learning-development" className={styles.footerLink}>Machine Learning</Link>
               </li>
               <li>
-                <Link href="/services/computer-vision-systems" className={styles.footerLink}>Computer Vision Systems</Link>
-              </li>
-              <li>
-                <Link href="/services/data-engineering" className={styles.footerLink}>Data Engineering</Link>
+                <Link href="/services/computer-vision-systems" className={styles.footerLink}>Computer Vision</Link>
               </li>
               <li>
                 <Link href="/services/ai-integration" className={styles.footerLink}>AI System Integration</Link>
+              </li>
+              <li>
+                <Link href="/services/cloud-ai-solutions" className={styles.footerLink}>Cloud AI Deployment</Link>
               </li>
             </ul>
           </div>
