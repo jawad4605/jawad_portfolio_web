@@ -210,6 +210,47 @@
   transform: translateY(3px);
 }
 
+/* Upwork Button */
+.upworkButton {
+  padding: 16px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background: #14a800;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(20, 168, 0, 0.3);
+}
+
+.upworkButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: 0.5s;
+}
+
+.upworkButton:hover::before {
+  left: 100%;
+}
+
+.upworkButton:hover {
+  background: #12970a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(20, 168, 0, 0.45);
+}
+
 /* Tech Stack */
 .techStack {
   margin-top: 20px;
@@ -487,7 +528,7 @@
     width: 100%;
   }
   
-  .primaryButton, .secondaryButton {
+  .primaryButton, .secondaryButton, .upworkButton {
     width: 100%;
     justify-content: center;
   }

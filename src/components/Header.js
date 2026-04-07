@@ -62,7 +62,7 @@ const Header = () => {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logoContainer}>
         <Link href="/" className={styles.logoLink}>
-          <img src='/images/logo.png' alt="Usama Hanif Logo" className={styles.logo} />
+          <img src='/images/logo.png' alt="Jawad Ahmad Logo" className={styles.logo} />
         </Link>
       </div>
       

@@ -53,6 +53,28 @@
   flex: 1;
 }
 
+.upworkOrderBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #14a800;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(20, 168, 0, 0.3);
+}
+
+.upworkOrderBtn:hover {
+  background: #12970a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(20, 168, 0, 0.45);
+}
+
 .contactHeading {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   color: #F8FAFC;
