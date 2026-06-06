@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { Analytics } from '@vercel/analytics/next';
 import WhatsAppButton from '../components/WhatsAppButton';
 import '../styles/globals.css';
 
@@ -27,6 +28,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Component {...pageProps} />
       <WhatsAppButton />
+      <Analytics />
     </>
   );
 }
