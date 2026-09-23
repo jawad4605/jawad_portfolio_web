@@ -150,13 +150,22 @@ const HeroSection = () => {
         <div className={styles.codeSnippet}></div>
         <div className={styles.profileImageContainer}>
           <img
-            src="/images/mypic2.jpg"
-            alt="Jawad Ahmad - Data Scientist"
+            src="/images/jawad-headshot.jpg"
+            alt="Jawad Ahmad - AI Product Builder and Full-Stack Developer"
             className={styles.profileImage}
             loading="eager"
           />
         </div>
         <div className={`${styles.profileHighlight} ${isHovering ? styles.hover : ''}`}></div>
+
+        <div className={styles.floatBadgeTop}>
+          <span className={styles.floatBadgeIcon}>★</span>
+          <span>5.0 Rating on Upwork</span>
+        </div>
+        <div className={styles.floatBadgeBottom}>
+          <span className={styles.floatBadgeIcon}>✓</span>
+          <span>100% Job Success</span>
+        </div>
 
         <div className={styles.socialLinks}>
           <Link

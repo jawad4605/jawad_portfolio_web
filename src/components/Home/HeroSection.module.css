@@ -11,6 +11,48 @@
   color: #F8FAFC;
 }
 
+/* Ambient glow / aurora backdrop */
+.heroSection::before,
+.heroSection::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.heroSection::before {
+  width: 480px;
+  height: 480px;
+  top: -140px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.35), transparent 70%);
+  animation: auroraFloat 11s ease-in-out infinite;
+}
+
+.heroSection::after {
+  width: 420px;
+  height: 420px;
+  bottom: -160px;
+  left: -110px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.28), transparent 70%);
+  animation: auroraFloat 13s ease-in-out infinite reverse;
+}
+
+@keyframes auroraFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(24px, -24px) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroSection::before,
+  .heroSection::after {
+    animation: none;
+  }
+}
+
 /* Content Styling */
 .content {
   max-width: 600px;
@@ -60,6 +102,10 @@
 
 .nameHighlight {
   color: #22D3EE;
+  background: linear-gradient(90deg, #22D3EE 0%, #818CF8 55%, #C084FC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   display: inline-block;
 }
@@ -105,6 +151,10 @@
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
   color: #22D3EE;
+  background: linear-gradient(90deg, #22D3EE 0%, #818CF8 55%, #C084FC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -319,7 +369,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(34, 211, 238, 0.1);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(139, 92, 246, 0.18));
   border-radius: 16px;
   transform: rotate(5deg);
   z-index: -1;
@@ -385,6 +435,61 @@
 .profileHighlight.hover {
   transform: scale(1.2);
   background: rgba(34, 211, 238, 0.2);
+}
+
+/* Floating credibility badges */
+.floatBadgeTop,
+.floatBadgeBottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #F8FAFC;
+  white-space: nowrap;
+  z-index: 3;
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+.floatBadgeTop {
+  top: 30px;
+  left: -30px;
+}
+
+.floatBadgeBottom {
+  bottom: 70px;
+  right: -20px;
+  animation-delay: 1.6s;
+}
+
+.floatBadgeIcon {
+  color: #FBBF24;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.floatBadgeBottom .floatBadgeIcon {
+  color: #34D399;
+}
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floatBadgeTop,
+  .floatBadgeBottom {
+    animation: none;
+  }
 }
 
 /* Social Links */
@@ -482,7 +587,17 @@
     width: 350px;
     height: 450px;
   }
-  
+
+  .floatBadgeTop {
+    left: 0;
+    top: 10px;
+  }
+
+  .floatBadgeBottom {
+    right: 0;
+    bottom: 90px;
+  }
+
   .buttonGroup {
     justify-content: center;
   }
@@ -521,7 +636,12 @@
     width: 280px;
     height: 360px;
   }
-  
+
+  .floatBadgeTop,
+  .floatBadgeBottom {
+    display: none;
+  }
+
   .buttonGroup {
     flex-direction: column;
     gap: 15px;

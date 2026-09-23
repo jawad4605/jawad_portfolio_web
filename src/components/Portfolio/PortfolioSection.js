@@ -119,6 +119,61 @@ const Portfolio = () => {
       image: "/images/portfolio/ai7.jpeg",
       link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
     },
+    // ── UPWORK PROJECT CATALOG / SERVICE OFFERINGS ──
+    {
+      id: 22,
+      title: "AI Voice Agents",
+      description:
+        "Conversational AI voice agents for appointment booking and lead qualification. They handle inbound calls, qualify leads, and book appointments automatically.",
+      category: "ai",
+      image: "/images/portfolio/ai-voice-agents.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 23,
+      title: "AI SaaS MVP Development",
+      description:
+        "End-to-end AI SaaS MVP development with Next.js, Node.js, and OpenAI, taking an idea from modern architecture to a scalable, launch-ready product.",
+      category: "ai",
+      image: "/images/portfolio/ai-saas-mvp.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 24,
+      title: "Business Automation",
+      description:
+        "Custom workflow automation built with n8n, Zapier, and GoHighLevel, connecting forms, CRM, analytics, and notifications into one hands-off pipeline.",
+      category: "ai",
+      image: "/images/portfolio/business-automation.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 25,
+      title: "Custom AI Agent Development",
+      description:
+        "Multi-agent AI systems with retrieval-augmented generation and shared memory, where specialized research, automation, and analytics agents plan and execute together.",
+      category: "ai",
+      image: "/images/portfolio/custom-ai-agent-development.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 26,
+      title: "Financial Data Pipeline Optimization",
+      description:
+        "High-performance financial data pipeline built with DuckDB and the Polygon market data API, handling ingestion, transformation, and analysis at scale.",
+      category: "ai",
+      image: "/images/portfolio/financial-data-pipeline.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 27,
+      title: "Runlium - AI Business Operating System",
+      description:
+        "An AI-powered business operating system combining CRM, projects, finance, and support with autonomous AI agents that handle the busy work.",
+      category: "ai",
+      image: "/images/portfolio/runlium-ai-os.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
     // ── WEBSITES / SOFTWARES ──
     {
       id: 1,
@@ -164,6 +219,33 @@ const Portfolio = () => {
       category: "website",
       image: "/images/portfolio/website11.png",
       link: "https://drive.google.com/drive/folders/1GTkdqhRf8jpA5SqwZHyaYxvBgueQDI8X?usp=sharing",
+    },
+    {
+      id: 28,
+      title: "MicroTech - Business Management Platform",
+      description:
+        "A custom business management platform unifying operations, clients, inventory, and reporting, with built-in workflow automation in one system.",
+      category: "website",
+      image: "/images/portfolio/microtech-platform.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 29,
+      title: "Al Mehar Girls College & School System",
+      description:
+        "An education website and school management platform covering admissions, academics, faculty profiles, and student life.",
+      category: "website",
+      image: "/images/portfolio/almehar-college-system.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+    },
+    {
+      id: 30,
+      title: "Lume POS - Smart POS & Operations Platform",
+      description:
+        "A modern point-of-sale and operations platform for food and beverage businesses, covering orders, inventory, sales analytics, and staff management.",
+      category: "website",
+      image: "/images/portfolio/lume-pos.webp",
+      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
     },
     // ── MOBILE APPS ──
     {

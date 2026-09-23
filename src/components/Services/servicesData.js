@@ -6,7 +6,12 @@ import {
   FiDatabase,
   FiGlobe,
   FiShield,
-  FiCloud
+  FiCloud,
+  FiPhoneCall,
+  FiPackage,
+  FiRepeat,
+  FiUsers,
+  FiTrendingUp
 } from 'react-icons/fi';
 
 export const servicesData = [
@@ -248,6 +253,156 @@ export const servicesData = [
       { title: 'Deployment', description: 'Ship models and APIs to cloud' },
       { title: 'Monitoring', description: 'Track uptime, latency, and errors' },
       { title: 'Optimization', description: 'Tune for cost, speed, and reliability' }
+    ]
+  },
+  {
+    id: 9,
+    slug: 'ai-voice-agents',
+    title: 'AI Voice Agents',
+    description: 'Conversational AI voice agents that handle calls, qualify leads, and book appointments automatically.',
+    longDescription: 'I build AI voice agents that answer inbound calls, understand caller intent, and take real action, from qualifying a lead to booking it directly onto a calendar. Each agent is tuned to your business so calls get handled consistently, day or night, without a human on the line for every one.',
+    icon: <FiPhoneCall />,
+    features: [
+      'Inbound Call Handling',
+      'Lead Qualification Scripts',
+      'Automated Appointment Booking',
+      'Calendar and CRM Integration',
+      'Natural Conversation Flow',
+      'Call Transcripts and Summaries'
+    ],
+    benefits: [
+      'Never miss a call, day or night',
+      'Consistent lead qualification every time',
+      'Fewer no-shows with automatic booking',
+      'Lower cost than a full-time call handler',
+      'Frees your team for higher-value work'
+    ],
+    process: [
+      { title: 'Call Flow Design', description: 'Map the conversations the agent needs to handle' },
+      { title: 'Voice and Script Build', description: 'Configure the voice, tone, and qualification questions' },
+      { title: 'Integration', description: 'Connect to your calendar, CRM, and phone number' },
+      { title: 'Testing', description: 'Run real call scenarios and refine responses' },
+      { title: 'Go Live', description: 'Launch and monitor call outcomes' }
+    ]
+  },
+  {
+    id: 10,
+    slug: 'ai-saas-mvp-development',
+    title: 'AI SaaS MVP Development',
+    description: 'Idea-to-MVP development for AI SaaS products, built on Next.js, Node.js, and OpenAI.',
+    longDescription: 'I take an AI SaaS idea from a blank page to a launch-ready MVP. That means a modern, scalable architecture from day one, an AI feature that actually works in production, and a product you can put in front of real users fast, not a throwaway prototype.',
+    icon: <FiPackage />,
+    features: [
+      'Next.js and Node.js Architecture',
+      'OpenAI and LLM Integration',
+      'User Auth and Billing Setup',
+      'Database and API Design',
+      'Responsive Product UI',
+      'Launch-Ready Deployment'
+    ],
+    benefits: [
+      'Idea to working product, fast',
+      'Architecture built to scale past MVP',
+      'AI features that work in the real world',
+      'Lower cost than a full dev team',
+      'Ready to demo to users or investors'
+    ],
+    process: [
+      { title: 'Scoping', description: 'Define the MVP feature set and AI use case' },
+      { title: 'Architecture', description: 'Design the stack, data model, and AI integration' },
+      { title: 'Build', description: 'Develop frontend, backend, and AI features' },
+      { title: 'Testing', description: 'Validate core flows end to end' },
+      { title: 'Launch', description: 'Deploy and hand over a production-ready MVP' }
+    ]
+  },
+  {
+    id: 11,
+    slug: 'business-automation',
+    title: 'Business Automation',
+    description: 'Custom workflow automation connecting forms, CRM, analytics, and notifications with n8n, Zapier, and GoHighLevel.',
+    longDescription: 'I design automation workflows that remove manual, repetitive work from your business. Using tools like n8n, Zapier, and GoHighLevel, I connect the systems you already use, forms, CRM, databases, and notifications, into one pipeline that runs itself.',
+    icon: <FiRepeat />,
+    features: [
+      'n8n Workflow Design',
+      'Zapier and GoHighLevel Integration',
+      'CRM and Customer Data Sync',
+      'Automated Notifications and Alerts',
+      'Form and Intake Processing',
+      'Analytics and Reporting Hooks'
+    ],
+    benefits: [
+      'Less manual work for your team',
+      'Fewer dropped leads and missed follow-ups',
+      'Systems that talk to each other automatically',
+      'Faster response times for customers',
+      'Scales without adding headcount'
+    ],
+    process: [
+      { title: 'Process Mapping', description: 'Document the current manual workflow' },
+      { title: 'Tool Selection', description: 'Choose n8n, Zapier, GoHighLevel, or a mix' },
+      { title: 'Build', description: 'Create and connect each automation step' },
+      { title: 'Testing', description: 'Run real data through the pipeline' },
+      { title: 'Monitoring', description: 'Watch for failures and refine over time' }
+    ]
+  },
+  {
+    id: 12,
+    slug: 'custom-ai-agent-development',
+    title: 'Custom AI Agent Development',
+    description: 'Multi-agent AI systems with retrieval-augmented generation, shared memory, and automation.',
+    longDescription: 'I build multi-agent AI systems where specialized agents, research, automation, RAG, and analytics, plan, collaborate, and execute together instead of relying on one general-purpose model. Each system is grounded in your own knowledge and context through retrieval-augmented generation and shared memory.',
+    icon: <FiUsers />,
+    features: [
+      'Multi-Agent Orchestration',
+      'Retrieval-Augmented Generation (RAG)',
+      'Shared Memory and Context',
+      'Task Planning and Routing',
+      'Tool and API Integration',
+      'Automation and Execution Agents'
+    ],
+    benefits: [
+      'Agents specialized for each task, working together',
+      'Answers grounded in your real data, not guesses',
+      'Handles multi-step tasks end to end',
+      'Extensible as your use cases grow',
+      'Reduces manual oversight over time'
+    ],
+    process: [
+      { title: 'Use Case Definition', description: 'Identify the tasks and agents needed' },
+      { title: 'Knowledge Setup', description: 'Build the RAG pipeline and memory layer' },
+      { title: 'Agent Development', description: 'Build and connect each specialized agent' },
+      { title: 'Testing', description: 'Validate agent collaboration on real tasks' },
+      { title: 'Deployment', description: 'Ship the multi-agent system to production' }
+    ]
+  },
+  {
+    id: 13,
+    slug: 'financial-data-pipeline-optimization',
+    title: 'Financial Data Pipeline Optimization',
+    description: 'High-performance financial data pipelines built with DuckDB and the Polygon market data API.',
+    longDescription: 'I design and optimize financial data pipelines for speed and reliability, using DuckDB for fast local analytics and the Polygon API for market data. Every pipeline covers ingestion, transformation, and query, built in Python so you can analyze large datasets without waiting on a slow database.',
+    icon: <FiTrendingUp />,
+    features: [
+      'DuckDB Pipeline Architecture',
+      'Polygon Market Data Integration',
+      'Python ETL Development',
+      'Query and Storage Optimization',
+      'Historical and Real-Time Data Handling',
+      'Automated Data Refresh Jobs'
+    ],
+    benefits: [
+      'Fast queries over large market datasets',
+      'Lower infrastructure cost than heavier databases',
+      'Reliable, repeatable data ingestion',
+      'Clean data ready for analysis or models',
+      'Built for financial data at scale'
+    ],
+    process: [
+      { title: 'Data Audit', description: 'Review data sources and current pipeline gaps' },
+      { title: 'Pipeline Design', description: 'Architect ingestion, storage, and transform steps' },
+      { title: 'Development', description: 'Build the ETL pipeline with DuckDB and Polygon API' },
+      { title: 'Optimization', description: 'Tune queries and storage for performance' },
+      { title: 'Monitoring', description: 'Automate refresh jobs and track data health' }
     ]
   }
 ];

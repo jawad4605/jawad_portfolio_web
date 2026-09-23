@@ -26,7 +26,7 @@ const ServiceDetailPage = () => {
   return (
     <>
       <Head>
-        <title>{service.title} | Usama Hanif - Professional Service</title>
+        <title>{service.title} | Jawad Ahmad - Professional Service</title>
         <meta name="description" content={service.description} />
       </Head>
 

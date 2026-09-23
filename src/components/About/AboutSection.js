@@ -122,8 +122,8 @@ const AboutSection = () => {
             <div className={styles.imageContainer}>
               <div className={styles.imageOverlay}></div>
               <img
-                src="/images/jawad-about.jpg"
-                alt="Jawad Ahmad"
+                src="/images/jawad-headshot.jpg"
+                alt="Jawad Ahmad - AI Product Builder and Full-Stack Developer"
                 className={styles.profileImage}
                 loading="lazy"
               />
