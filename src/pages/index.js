@@ -20,6 +20,8 @@ export default function Home() {
         <meta property="og:title" content="Jawad Ahmad | AI Product Builder and Full-Stack Developer" />
         <meta property="og:description" content="AI product builder and full-stack developer. I design, build, and deploy intelligent web applications that serve real users." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jawad.runlium.cloud/" />
+        <link rel="canonical" href="https://jawad.runlium.cloud/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

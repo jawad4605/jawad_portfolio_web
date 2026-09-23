@@ -16,6 +16,7 @@ export default function Contact() {
           name="keywords"
           content="Data Scientist contact, AI Engineer, Computer Vision expert, Machine Learning consultant, Python Developer, Jawad Ahmad contact"
         />
+        <link rel="canonical" href="https://jawad.runlium.cloud/contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

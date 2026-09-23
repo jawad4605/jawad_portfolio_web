@@ -10,6 +10,13 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "All fields are required" });
     }
 
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error("Missing SMTP_USER or SMTP_PASS environment variables");
+      return res
+        .status(500)
+        .json({ error: "Email is not configured. Please try again later." });
+    }
+
     try {
       // Create a transporter for Nodemailer
       const transporter = nodemailer.createTransport({
@@ -17,8 +24,8 @@ export default async function handler(req, res) {
         port: 587, // Or 465 for SSL
         secure: false, // Set to true for 465, false for other ports
         auth: {
-          user: "jawad.ahmad4605@gmail.com", // Add your email address here
-          pass: "wnfs prnj soxv zwsd", // Add your email password or app password here
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
         },
       });
 

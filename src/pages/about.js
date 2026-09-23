@@ -16,6 +16,7 @@ export default function About() {
           name="keywords"
           content="Data Scientist, AI Developer, Computer Vision, Machine Learning, Python Developer, Data Analyst, Jawad Ahmad"
         />
+        <link rel="canonical" href="https://jawad.runlium.cloud/about" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

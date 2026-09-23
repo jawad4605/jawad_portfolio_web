@@ -17,7 +17,7 @@ const ServiceDetailPage = () => {
   }
 
   const openWhatsApp = () => {
-    const phoneNumber = '923116226767';
+    const phoneNumber = '923209641408';
     const message = `Hi, I'm interested in your ${service.title} service. Can we discuss this further?`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');

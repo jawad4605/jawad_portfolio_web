@@ -10,14 +10,23 @@ const Portfolio = () => {
 
   // Portfolio items data
   const portfolioItems = [
-    // ── LIVE AI PROJECTS (pinned to top) ──
+    // ── LIVE AI PROJECTS (real, working links first) ──
+    {
+      id: 27,
+      title: "Runlium - AI Business Operating System",
+      description:
+        "An AI-powered business operating system combining CRM, projects, finance, and support with autonomous AI agents that handle the busy work.",
+      category: "ai",
+      image: "/images/portfolio/runlium-ai-os.webp",
+      link: "https://runlium.cloud",
+    },
     {
       id: 17,
       title: "VieroMind",
       description:
         "Licensed therapists and private AI tools in one place. Your path to mental wellness, designed for regional realities.",
       category: "ai",
-      image: "/images/portfolio/vieromind-live.svg",
+      image: "/images/portfolio/vieromind.webp",
       link: "https://vieromind.com",
     },
     {
@@ -26,7 +35,7 @@ const Portfolio = () => {
       description:
         "Luxury fine jewelry e-commerce platform showcasing handcrafted bespoke pieces. Timeless elegance, refined.",
       category: "ai",
-      image: "/images/portfolio/jalish-live.svg",
+      image: "/images/portfolio/jalish-fine-jewelry.webp",
       link: "https://jalish.manus.space",
     },
     {
@@ -35,7 +44,7 @@ const Portfolio = () => {
       description:
         "Invitation-only strategic convening portal defining a scalable mental health system for Pakistan's 240 million citizens.",
       category: "ai",
-      image: "/images/portfolio/roundtable-live.svg",
+      image: "/images/portfolio/roundtable-pakistan.webp",
       link: "https://roundtablevieromind.manus.space",
     },
     {
@@ -44,7 +53,7 @@ const Portfolio = () => {
       description:
         "AI-powered clinical document engine that extracts structure from PDF/Word files and generates professional print-ready PDFs.",
       category: "ai",
-      image: "/images/portfolio/vieroacademy.svg",
+      image: "/images/portfolio/clinical-document-engine.webp",
       link: "https://vieroacademy.manus.space",
     },
     {
@@ -53,73 +62,10 @@ const Portfolio = () => {
       description:
         "Free online file conversion platform with 20+ tools for PDF, Word, images, and Markdown. Fast, free, no sign-up required.",
       category: "ai",
-      image: "/images/portfolio/fileconvpro.svg",
+      image: "/images/portfolio/fileconv-pro.webp",
       link: "https://fileconvpro.manus.space",
     },
-    // ── OTHER AI PROJECTS ──
-    {
-      id: 3,
-      title: "RAG GPT Implementation",
-      description:
-        "Custom Retrieval-Augmented Generation system for enhanced AI question answering capabilities.",
-      category: "ai",
-      image: "/images/portfolio/website4.png",
-      link: "https://drive.google.com/drive/folders/1fuE7Ip5eKscjx7KLOxQSVn2syGI99aoS?usp=sharing",
-    },
-    {
-      id: 9,
-      title: "Oriole AI Suite",
-      description: "A suite of AI tools for different types of AI Solutions.",
-      category: "ai",
-      image: "/images/portfolio/ai2.png",
-      link: "https://drive.google.com/drive/folders/14dmt4xgYLAa8PY6sw8Nl8vVcWMm6AR3T?usp=sharing",
-    },
-    {
-      id: 12,
-      title: "Mouse Behavior Authentication System",
-      description:
-        "An AI-powered authentication system that verifies users based on their mouse movement patterns and behaviors.",
-      category: "ai",
-      image: "/images/portfolio/ai3.jpeg",
-      link: "https://github.com/jawad4605/browser_behaviour?tab=readme-ov-file",
-    },
-    {
-      id: 13,
-      title: "Sentiment Analysis System",
-      description:
-        "A natural language processing (NLP) system that analyzes text data to determine emotions, opinions, and sentiments.",
-      category: "ai",
-      image: "/images/portfolio/ai4.png",
-      link: "https://github.com/jawad4605/sentimential_analysis",
-    },
-    {
-      id: 14,
-      title: "AI Automation System",
-      description:
-        "An AI-driven automation platform designed to streamline tasks, improve efficiency, and reduce human intervention.",
-      category: "ai",
-      image: "/images/portfolio/ai5.jpg",
-      link: "https://github.com/jawad4605/sentimential_analysis",
-    },
-    {
-      id: 15,
-      title: "Delivery Boy Tracking System",
-      description:
-        "A real-time tracking and monitoring system for delivery personnel to enhance logistics efficiency and transparency.",
-      category: "ai",
-      image: "/images/portfolio/ai6.jpeg",
-      link: "https://github.com/jawad4605/delivery_efficiency_dashboard/tree/main",
-    },
-    {
-      id: 16,
-      title: "AI Story Book Generator",
-      description:
-        "An AI tool that generates creative and engaging children's storybooks with unique plots, illustrations, and narration.",
-      category: "ai",
-      image: "/images/portfolio/ai7.jpeg",
-      link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
-    },
-    // ── UPWORK PROJECT CATALOG / SERVICE OFFERINGS ──
+    // ── UPWORK PROJECT CATALOG / SERVICE OFFERINGS (no live demo yet) ──
     {
       id: 22,
       title: "AI Voice Agents",
@@ -127,7 +73,7 @@ const Portfolio = () => {
         "Conversational AI voice agents for appointment booking and lead qualification. They handle inbound calls, qualify leads, and book appointments automatically.",
       category: "ai",
       image: "/images/portfolio/ai-voice-agents.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+      link: "https://www.upwork.com/services/product/development-it-an-ai-voice-agent-for-appointment-booking-and-lead-qualification-2101998681219064640",
     },
     {
       id: 23,
@@ -136,7 +82,7 @@ const Portfolio = () => {
         "End-to-end AI SaaS MVP development with Next.js, Node.js, and OpenAI, taking an idea from modern architecture to a scalable, launch-ready product.",
       category: "ai",
       image: "/images/portfolio/ai-saas-mvp.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+      link: "https://www.upwork.com/services/product/development-it-a-full-stack-ai-saas-mvp-built-with-next-js-node-js-and-openai-2101981506654201587",
     },
     {
       id: 24,
@@ -145,7 +91,7 @@ const Portfolio = () => {
         "Custom workflow automation built with n8n, Zapier, and GoHighLevel, connecting forms, CRM, analytics, and notifications into one hands-off pipeline.",
       category: "ai",
       image: "/images/portfolio/business-automation.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+      link: "https://www.upwork.com/services/product/development-it-a-custom-business-automation-system-built-in-n8n-zapier-or-gohighlevel-2102011445555307393",
     },
     {
       id: 25,
@@ -154,7 +100,7 @@ const Portfolio = () => {
         "Multi-agent AI systems with retrieval-augmented generation and shared memory, where specialized research, automation, and analytics agents plan and execute together.",
       category: "ai",
       image: "/images/portfolio/custom-ai-agent-development.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+      link: "https://www.upwork.com/services/product/development-it-a-custom-ai-agent-system-that-automates-your-business-workflows-2101990858330022785",
     },
     {
       id: 26,
@@ -166,15 +112,114 @@ const Portfolio = () => {
       link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
     },
     {
-      id: 27,
-      title: "Runlium - AI Business Operating System",
+      id: 31,
+      title: "AI Automation & Chatbot Development",
       description:
-        "An AI-powered business operating system combining CRM, projects, finance, and support with autonomous AI agents that handle the busy work.",
+        "Automation and custom chatbot development using n8n, Zapier, and conversational AI to handle repetitive tasks and customer interactions.",
       category: "ai",
-      image: "/images/portfolio/runlium-ai-os.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
+      image: "/images/portfolio/ai-automation-chatbots.webp",
+      link: "https://www.upwork.com/services/product/development-it-a-expert-in-ai-automation-n8n-zapier-and-chatbot-development-2015476523463718841",
+    },
+    {
+      id: 32,
+      title: "Power BI Dashboards & Business Reporting",
+      description:
+        "Expert-level Power BI dashboards and automated business reporting for real estate and e-commerce data analysis.",
+      category: "ai",
+      image: "/images/portfolio/power-bi-dashboards.webp",
+      link: "https://www.upwork.com/services/product/development-it-expert-level-power-bi-dashboards-data-analysis-for-real-estate-e-commerce-1831997641379062844",
+    },
+    // ── OTHER AI PROJECTS ──
+    {
+      id: 3,
+      title: "RAG GPT Implementation",
+      description:
+        "Custom Retrieval-Augmented Generation system for enhanced AI question answering capabilities.",
+      category: "ai",
+      image: "/images/portfolio/rag-gpt.webp",
+      link: "https://drive.google.com/drive/folders/1fuE7Ip5eKscjx7KLOxQSVn2syGI99aoS?usp=sharing",
+    },
+    {
+      id: 9,
+      title: "Oriole AI Suite",
+      description: "A suite of AI tools for different types of AI Solutions.",
+      category: "ai",
+      image: "/images/portfolio/oriole-ai-suite.webp",
+      link: "https://drive.google.com/drive/folders/14dmt4xgYLAa8PY6sw8Nl8vVcWMm6AR3T?usp=sharing",
+    },
+    {
+      id: 12,
+      title: "Mouse Behavior Authentication System",
+      description:
+        "An AI-powered authentication system that verifies users based on their mouse movement patterns and behaviors.",
+      category: "ai",
+      image: "/images/portfolio/mouse-behavior-authentication.webp",
+      link: "https://github.com/jawad4605/browser_behaviour?tab=readme-ov-file",
+    },
+    {
+      id: 13,
+      title: "Sentiment Analysis System",
+      description:
+        "A natural language processing (NLP) system that analyzes text data to determine emotions, opinions, and sentiments.",
+      category: "ai",
+      image: "/images/portfolio/sentiment-analysis.webp",
+      link: "https://github.com/jawad4605/sentimential_analysis",
+    },
+    {
+      id: 14,
+      title: "AI Automation System",
+      description:
+        "An AI-driven automation platform designed to streamline tasks, improve efficiency, and reduce human intervention.",
+      category: "ai",
+      image: "/images/portfolio/ai-automation-system.webp",
+      link: "https://github.com/jawad4605/sentimential_analysis",
+    },
+    {
+      id: 15,
+      title: "Delivery Boy Tracking System",
+      description:
+        "A real-time tracking and monitoring system for delivery personnel to enhance logistics efficiency and transparency.",
+      category: "ai",
+      image: "/images/portfolio/delivery-tracking-system.webp",
+      link: "https://github.com/jawad4605/delivery_efficiency_dashboard/tree/main",
+    },
+    {
+      id: 16,
+      title: "AI Story Book Generator",
+      description:
+        "An AI tool that generates creative and engaging children's storybooks with unique plots, illustrations, and narration.",
+      category: "ai",
+      image: "/images/portfolio/ai-story-book-generator.webp",
+      link: "https://drive.google.com/drive/folders/1kGA40-m_qeZRJjukfuSc9pHC1AyotwAO?usp=sharing",
     },
     // ── WEBSITES / SOFTWARES ──
+    {
+      id: 28,
+      title: "MicroTech - Business Management Platform",
+      description:
+        "A custom business management platform unifying operations, clients, inventory, and reporting, with built-in workflow automation in one system.",
+      category: "website",
+      image: "/images/portfolio/microtech-platform.webp",
+      link: "https://microtech-silk.vercel.app/",
+    },
+    {
+      id: 29,
+      title: "Al Mehar Girls College & School System",
+      description:
+        "An education website and school management platform covering admissions, academics, faculty profiles, and student life.",
+      category: "website",
+      image: "/images/portfolio/almehar-college-system.webp",
+      link: "https://sms.runlium.cloud/sites/al-mehar-girls-college-and-school-system",
+    },
+    {
+      id: 30,
+      title: "Lume POS - Smart POS & Operations Platform",
+      description:
+        "A modern point-of-sale and operations platform for food and beverage businesses, covering orders, inventory, sales analytics, and staff management.",
+      category: "website",
+      image: "/images/portfolio/lume-pos.webp",
+      link: "https://lume-pos-two.vercel.app/",
+    },
     {
       id: 1,
       title: "Educational Platform",
@@ -220,33 +265,6 @@ const Portfolio = () => {
       image: "/images/portfolio/website11.png",
       link: "https://drive.google.com/drive/folders/1GTkdqhRf8jpA5SqwZHyaYxvBgueQDI8X?usp=sharing",
     },
-    {
-      id: 28,
-      title: "MicroTech - Business Management Platform",
-      description:
-        "A custom business management platform unifying operations, clients, inventory, and reporting, with built-in workflow automation in one system.",
-      category: "website",
-      image: "/images/portfolio/microtech-platform.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
-    },
-    {
-      id: 29,
-      title: "Al Mehar Girls College & School System",
-      description:
-        "An education website and school management platform covering admissions, academics, faculty profiles, and student life.",
-      category: "website",
-      image: "/images/portfolio/almehar-college-system.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
-    },
-    {
-      id: 30,
-      title: "Lume POS - Smart POS & Operations Platform",
-      description:
-        "A modern point-of-sale and operations platform for food and beverage businesses, covering orders, inventory, sales analytics, and staff management.",
-      category: "website",
-      image: "/images/portfolio/lume-pos.webp",
-      link: "https://www.upwork.com/freelancers/~01a0f6706306d9fb3a",
-    },
     // ── MOBILE APPS ──
     {
       id: 4,
@@ -284,6 +302,115 @@ const Portfolio = () => {
       image: "/images/portfolio/mobileapp4.jpeg",
       link: "https://drive.google.com/drive/folders/1FnOEAqXktpNMbopkdy9X49WbZGGlMEtm?usp=sharing",
     },
+    // ── N8N / AUTOMATION PROJECTS ──
+    {
+      id: 33,
+      title: "AI Blog Automation System",
+      description:
+        "AI writes and auto-publishes blog content on a schedule, taking a topic from draft to a live post without manual steps.",
+      category: "automation",
+      image: "/images/portfolio/ai-blog-automation.webp",
+      link: "https://drive.google.com/drive/folders/1HASgoZY2tvG_O9NEljZpHME9VEQYJf1U",
+    },
+    {
+      id: 34,
+      title: "Estate Planning Content Automation",
+      description:
+        "AI blog content generation for an estate planning firm, turning property data into published WordPress articles.",
+      category: "automation",
+      image: "/images/portfolio/estate-planning-content.webp",
+      link: "https://drive.google.com/drive/folders/1-R_rQxQ_HM8O8RtaVaA1PI7zittPz9Qp",
+    },
+    {
+      id: 35,
+      title: "AI Image Generation & Automated Branding",
+      description:
+        "AI-generated imagery with automated branding, producing on-brand visual assets without a manual design pass.",
+      category: "automation",
+      image: "/images/portfolio/ai-image-branding.webp",
+      link: "https://drive.google.com/drive/folders/1U8GYhosyL7x0yk7xj592Zn6yENBJpoOr",
+    },
+    {
+      id: 36,
+      title: "AI-Powered Sales Automation System",
+      description:
+        "Leads move through an AI-powered sales funnel automatically, from first contact to a closed deal.",
+      category: "automation",
+      image: "/images/portfolio/ai-sales-automation.webp",
+      link: "https://drive.google.com/drive/folders/1R1Gujyx-48caiWV09hZuUfL2TLebZBnF",
+    },
+    {
+      id: 37,
+      title: "Apollo Lead Generation & AI Outreach Automation",
+      description:
+        "Finds qualified leads through Apollo and runs AI-driven outreach automatically, with no manual prospecting.",
+      category: "automation",
+      image: "/images/portfolio/apollo-lead-generation.webp",
+      link: "https://drive.google.com/drive/folders/1sKzLMtGJl3QnyPSc7UzqYSPgRFspQgBb",
+    },
+    {
+      id: 38,
+      title: "Automated Email Reply Generation",
+      description:
+        "AI reads incoming email and drafts the reply automatically, built for the Candio project.",
+      category: "automation",
+      image: "/images/portfolio/candio-email-reply.webp",
+      link: "https://drive.google.com/drive/folders/1OwM-_DmKI8hGKtmZEKioAXDaotYV0U8s",
+    },
+    {
+      id: 39,
+      title: "Property Deal-Analysis Forms (BRRR/BTL/Flip/HMO)",
+      description:
+        "Automated deal-analysis forms for the Italy Walls property team, covering BRRR, BTL, Flip, and HMO strategies.",
+      category: "automation",
+      image: "/images/portfolio/italy-walls-deal-analysis.webp",
+      link: "https://drive.google.com/drive/folders/1oH0incDdqrFOrLU758Sov1if7OZffHiU",
+    },
+    {
+      id: 40,
+      title: "Swiss Invoicing & Therapy Confirmation Automation",
+      description:
+        "Swiss QR-bill invoicing connected to automated therapy appointment confirmations, built for the Laurence Project.",
+      category: "automation",
+      image: "/images/portfolio/laurence-invoicing.webp",
+      link: "https://drive.google.com/drive/folders/1MHbsMVMRaWEm5hVo1-xvhxKFHRR0i4S_",
+    },
+    {
+      id: 41,
+      title: "Shopify Order Processing Automation",
+      description:
+        "Automated order processing for the Poketrio Shopify store, from purchase to fulfillment with no manual handling.",
+      category: "automation",
+      image: "/images/portfolio/poketrio-shopify.webp",
+      link: "https://drive.google.com/drive/folders/1ac1OmTom2Jek2gc-NS5ML-tY7rwBOxsH",
+    },
+    {
+      id: 42,
+      title: "SEO Automation",
+      description:
+        "Automated content, ranking checks, and keyword tracking, keeping SEO performance monitored without manual reporting.",
+      category: "automation",
+      image: "/images/portfolio/seo-automation.webp",
+      link: "https://drive.google.com/drive/folders/1Eno2vYOC3-2_QkWhobWSRTdlm07c4guB",
+    },
+    {
+      id: 43,
+      title: "Legal Reel Automation",
+      description:
+        "Legal content automatically turned into short-form video reels and posted to social media for a legal practice.",
+      category: "automation",
+      image: "/images/portfolio/legal-reel-automation.webp",
+      link: "https://drive.google.com/drive/folders/1IYclIZRXn-OZEkokVWGovPy0Qd_7Pwz-",
+    },
+    {
+      id: 44,
+      title: "WhatsApp AI Chatbot",
+      description:
+        "An AI chatbot that handles automated conversations over WhatsApp, answering and routing messages without a human on the line.",
+      category: "automation",
+      image: "/images/portfolio/whatsapp-chatbot.webp",
+      link: "https://drive.google.com/drive/folders/1vp4AYjDeWTI_3WVwCKYYtICqPydvkSnc",
+    },
   ];
 
   // Filter items based on active tab
@@ -295,6 +422,7 @@ const Portfolio = () => {
   // Tab data
   const tabs = [
     { id: "ai", label: "AI Solutions" },
+    { id: "automation", label: "Automation" },
     { id: "website", label: "Websites / Softwares" },
     { id: "mobile", label: "Mobile Apps" },
     // { id: "uiux", label: "UI/UX Design" },

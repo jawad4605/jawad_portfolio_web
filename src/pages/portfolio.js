@@ -19,7 +19,8 @@ export default function Portfolios() {
         <meta property="og:title" content="Jawad Ahmad | Data Science & AI Portfolio" />
         <meta property="og:description" content="Collection of professional data science and AI projects demonstrating real-world problem solving" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.yourwebsite.com/portfolio" />
+        <meta property="og:url" content="https://jawad.runlium.cloud/portfolio" />
+        <link rel="canonical" href="https://jawad.runlium.cloud/portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

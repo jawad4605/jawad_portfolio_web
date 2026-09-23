@@ -19,7 +19,8 @@ export default function Services() {
         <meta property="og:title" content="Jawad Ahmad | AI & Data Science Services" />
         <meta property="og:description" content="Professional AI and Data Science services including Machine Learning, Computer Vision, and Data Analytics solutions" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.yourwebsite.com/services" />
+        <meta property="og:url" content="https://jawad.runlium.cloud/services" />
+        <link rel="canonical" href="https://jawad.runlium.cloud/services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
