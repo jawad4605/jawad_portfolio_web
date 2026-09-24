@@ -22,6 +22,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jawad.runlium.cloud/" />
         <link rel="canonical" href="https://jawad.runlium.cloud/" />
+        <meta name="google-site-verification" content="y8lUv0mO2RUb7m_ZTxqUPAOjc3lHnhwZVtOJ54OJnow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
